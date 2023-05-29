@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>;
+@{
+    ViewData["Title"] = "Home Page";
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-layerswitcher@4.1.1"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.1/dist/ol-layerswitcher.css" />
+    //<script src='http://code.jquery.com/jquery-latest.js'></script>
+}
+<!--
+<script>
+    val userid='@ViewBag.userid.ToString()';
+</script>-->
+<div class="content-place">
+    <input type="hidden" value="@ViewBag.userid.ToString()" id="userInfoID">
+ </div>
+</div>
+<script src="~/js/map.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>

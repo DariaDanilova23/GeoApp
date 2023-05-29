@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Shape Import Page";
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-layerswitcher@4.1.1"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.1/dist/ol-layerswitcher.css" />
+
+}
+<div class="row">
+    <div class="col-md-4">
+        <h3 class="center-h1">Загрузка shape-файла</h3>
+        <form asp-action="AddFile" asp-controller="Shape" method="post" enctype="multipart/form-data"> <!--Вызов действи AddFile при отправки формы-->
+            <input type="file" name="uploadedFile" accept=".shp"><br>
+            <label for="fname">Название карты:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <button type="submit" class="btn btn-primary" value="Загрузить">Загрузить</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>

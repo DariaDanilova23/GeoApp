@@ -1,0 +1,29 @@
+@model dynamic
+@{
+    ViewData["Title"] = "Manage User Roles";
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+}
+<div class="row">
+    <div class="col-md-4">
+        <p><strong>ID пользователя: </strong>@Model.User.Id</p>
+        <p><strong>e-mail: </strong>@Model.User.Email</p>
+        @foreach (var role in Model.RoleUser)
+        {
+            <p><strong>Текущая роль:</strong> @role.Name</p>
+            // <p>@role.UserName</p>
+        }
+        <form asp-action="ChangeUser" asp-route-userId="@Model.User.Id" method="post">
+            <!--При отправки формы вызов ChangeUser и присваивание переменной userId Id пользователя роль которого изменяем-->
+            <p><strong>Изменить роль пользователя:</strong></p>
+            <select required onsubmit="this.form.submit()" name="ChangeUser">
+                @foreach (var roleS in Model.AllRoles)
+                {
+                    <option value="@roleS.Name">@roleS.Name</option>
+                    //Выгрузка всех ролей существующих в системе
+                }
+            </select>
+            <button type="submit" class="btn btn-primary mx-auto">Применить</button>
+        </form>
+    </div>
+</div>

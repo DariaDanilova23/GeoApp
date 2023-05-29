@@ -233,6 +233,23 @@ if (userId != " ") {
 
 }
 
+$.ajax({
+  type: "DELETE",
+  headers: {
+    "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
+  },
+  url: "http://localhost:8080/geoserver/rest/workspaces/d1b7c79a-a2c9-49b6-aa3a-873ca06b04d6/datastores/123_123/?recurse=true",
+  success: function (result) {
+    console.log(result);
+    console.log("успех");
+  },
+  error: function (error) {
+    console.log(error);
+    console.log("error");
+  }
+})
+
+map.addLayer(overlayLayerGroup); //Добавление группы слоев на карту
 
 
 //---------------

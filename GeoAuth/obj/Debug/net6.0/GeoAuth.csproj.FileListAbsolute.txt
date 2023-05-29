@@ -363,11 +363,6 @@ C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.MvcApplicationPartsAssemb
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.RazorAssemblyInfo.cache
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.RazorAssemblyInfo.cs
-C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets\msbuild.GeoAuth.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets\msbuild.build.GeoAuth.props
-C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.GeoAuth.props
-C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.GeoAuth.props
-C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

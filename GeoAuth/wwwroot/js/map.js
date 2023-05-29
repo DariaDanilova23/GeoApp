@@ -164,7 +164,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({
 map.addControl(layerSwitcher);
 //----------------------
 const overlayLayerGroup = new ol.layer.Group({
-  'title': 'Тематические слои',
+  'title': 'Тематические слои'
 })
 
 $.ajax({
@@ -198,8 +198,9 @@ map.addLayer(overlayLayerGroup); //Добавление группы слоев 
 var userId = document.getElementById("userInfoID").value; //Получение id пользователя
 if (userId != " ") {
   const personalLayerGroup = new ol.layer.Group({
-    'title': 'Личные слои',
-    'layers': []
+   // 'id': 'personalLayers',
+    'name': 'markerGroup',
+    'title': 'Личные слои'
   })
   $.ajax({
     type: "GET",
@@ -231,6 +232,7 @@ if (userId != " ") {
   map.addLayer(personalLayerGroup); //Добавление группы слоев на карту
 
 }
+
 
 
 //---------------
@@ -585,4 +587,4 @@ var formatArea = function (polygon) {
   }
   return output;
 };
-addInteraction();
+//addInteraction();

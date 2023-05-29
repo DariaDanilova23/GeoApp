@@ -98,6 +98,25 @@ namespace GeoAuth.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public async Task<IActionResult> DeleteFile()
+        {
+            String sUrl = "http://localhost:8080/geoserver/rest/workspaces/d1b7c79a-a2c9-49b6-aa3a-873ca06b04d6/datastores/3001/featuretypes/3001/?recurse=true";
+
+            WebRequest request = WebRequest.Create(sUrl);
+            request.Method = "DELETE";
+            string _auth = string.Format("{0}:{1}", "admin","geoserver");
+            string _enc = Convert.ToBase64String(Encoding.ASCII.GetBytes(_auth));
+            string _cred = string.Format("{0} {1}", "Basic", _enc);
+            request.Headers[HttpRequestHeader.Authorization] = _cred;
+           // request.Headers.Add("Authorization": "Basic " + btoa("admin" + ":" + "geoserver"));
+            //request.Credentials = new NetworkCredential("admin", "geoserver");
+
+            WebResponse response = request.GetResponse(); //получение ответа от Geoserver
+            Console.Write("Response from GeoServer: " + response);
+            return RedirectToAction("Index", "Home");
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

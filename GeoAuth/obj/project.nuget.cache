@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uankQEA+90w36WCt/WFfM1yrqFQg3byH5ShWqDcU/5/tMGtTRu8NMuzY1+lmNwbYeedjJOczDBnzH2WsWf+qPw==",
+  "dgSpecHash": "5UBURmefc7vRFntBXKhCJ4lhpyXDrvbA2n4Ikrrlf5S8srM4e2D4hfoqVh9kq0PfhUMXoKEuaiDpnmoGBlammw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
+  "projectFilePath": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dddan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dddan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

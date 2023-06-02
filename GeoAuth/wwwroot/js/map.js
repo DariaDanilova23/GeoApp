@@ -1,22 +1,21 @@
 var mainContainer = document.getElementsByClassName("content-place");
-
 var mapClass = document.createElement("div");
 mapClass.setAttribute('class', 'map');
 mapClass.setAttribute('id', 'map');
 mainContainer[0].appendChild(mapClass);
 //-------------------
 const container = document.createElement("div");
-container.setAttribute('id','popup');
-container.setAttribute('class','ol-popup');
+container.setAttribute('id', 'popup');
+container.setAttribute('class', 'ol-popup');
 mainContainer[0].appendChild(container);
 
 const closer = document.createElement("a");
-closer.setAttribute('id','popup-closer');
-closer.setAttribute('class','ol-popup-closer');
+closer.setAttribute('id', 'popup-closer');
+closer.setAttribute('class', 'ol-popup-closer');
 container.appendChild(closer);
 
 const content = document.createElement("div");
-content.setAttribute('id','popup-content');
+content.setAttribute('id', 'popup-content');
 container.appendChild(content);
 
 const overlay = new ol.Overlay({
@@ -34,7 +33,7 @@ closer.onclick = function () {
   return false;
 };
 
-//---------------
+
 var mapView = new ol.View({
   center: [3830000, 5653800],
   zoom: 8.2,
@@ -82,7 +81,7 @@ const map = new ol.Map({
       })
       ]
     })],
-    overlays: [overlay],//
+  overlays: [overlay],//
   target: 'map'
 });
 //-------------
@@ -109,13 +108,13 @@ coorButton.addEventListener("click", () => {
   coorButton.classList.toggle("cliked");
   coorFlag = !coorFlag;
   map.on('singleclick', function (evt) {
-    if((lengthFlag == false) && (areaFlag == false) && (coorFlag == true)){
-    const coordinate = evt.coordinate;
-    const hdms = ol.coordinate.toStringHDMS(ol.proj.toLonLat(coordinate));
-    content.innerHTML = '<p>Координата:</p><code>' + hdms + '</code>';
-    overlay.setPosition(coordinate);
+    if ((lengthFlag == false) && (areaFlag == false) && (coorFlag == true)) {
+      const coordinate = evt.coordinate;
+      const hdms = ol.coordinate.toStringHDMS(ol.proj.toLonLat(coordinate));
+      content.innerHTML = '<p>Координата:</p><code>' + hdms + '</code>';
+      overlay.setPosition(coordinate);
     }
-});
+  });
 }
 )
 map.addControl(coorControl);
@@ -166,6 +165,7 @@ map.addControl(layerSwitcher);
 const overlayLayerGroup = new ol.layer.Group({
   'title': 'Тематические слои'
 })
+map.addLayer(overlayLayerGroup); //Добавление группы слоев на карту
 
 $.ajax({
   type: "GET",
@@ -177,15 +177,13 @@ $.ajax({
       $(this).find('Name').each(function () { // цикл для каждого названия слоя
         var value = $(this).text(); //получение слоя
         var titleName = elementRespond.find('Title').text(); //Получение названия слоя
-        var newlayer = new ol.layer.Tile({ // Определение слоя загруженного с geoserver
-          title: titleName,
-          source: new ol.source.TileWMS({
-            url: 'http://localhost:8080/geoserver/geoportal/wms',//Обращение к workspace "geoserver" 
-            crossOrigin: "Anonymous",
-            params: { 'LAYERS': value, 'TILED': true },
-            serverType: 'geoserver',
-            visible: true
-          })
+        var newlayer = new ol.layer.Vector({
+          source: new ol.source.Vector({
+            url: 'http://localhost:8080/geoserver/geoportal/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=' + value + '&maxFeatures=50&outputFormat=application/json',
+            format: new ol.format.GeoJSON(),
+            attributions: '@geoserver'
+          }),
+          title: titleName
         })
         overlayLayerGroup.getLayers().push(newlayer); //добавление слоя в группу
         layerSwitcher.renderPanel(); //Обновление переключателя слоев
@@ -193,64 +191,94 @@ $.ajax({
     })
   }
 })
-map.addLayer(overlayLayerGroup); //Добавление группы слоев на карту
+const personalLayerGroup = new ol.layer.Group({
+  'title': 'Личные слои'
+})
 
+//---------------------------
 var userId = document.getElementById("userInfoID").value; //Получение id пользователя
 if (userId != " ") {
-  const personalLayerGroup = new ol.layer.Group({
-   // 'id': 'personalLayers',
-    'name': 'markerGroup',
-    'title': 'Личные слои'
-  })
+
+  let downLayer = [];
   $.ajax({
-    type: "GET",
-    url: "http://localhost:8080/geoserver/" + userId + "/wfs?request=getCapabilities", //Обращение к личному workspace пользователя
+    type: 'GET',
+    url: 'http://localhost:8080/geoserver/' + userId + '/wfs?request=getCapabilities',
     dataType: "xml",
     success: function (xml) {
       $(xml).find('FeatureType').each(function () {
         var elementRespond = $(this);
-        $(this).find('Name').each(function () {
-          var value = $(this).text();
-          var titleName = elementRespond.find('Title').text();
-          var newlayer = new ol.layer.Tile({  // Определение слоя загруженного с geoserver
-            title: titleName,
-            source: new ol.source.TileWMS({
-              url: 'http://localhost:8080/geoserver/' + userId + '/wms',
-              crossOrigin: "Anonymous",
-              params: { 'LAYERS': value, 'TILED': true },
-              serverType: 'geoserver',
-              visible: true
-            })
+        $(this).find('Name').each(function () { // цикл для каждого названия слоя
+          var value = $(this).text(); //получение слоя
+          var titleName = elementRespond.find('Title').text(); //Получение названия слоя
+          var newlayer = new ol.layer.Vector({
+            source: new ol.source.Vector({
+              //geoportal%3A
+              url: 'http://localhost:8080/geoserver/' + userId + '/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=' + value + '&maxFeatures=50&outputFormat=application/json',
+              format: new ol.format.GeoJSON(),
+              attributions: '@geoserver'
+            }),
+            title: titleName
           })
-          personalLayerGroup.getLayers().push(newlayer); //Добавление слоя в группу личных слоев
-          layerSwitcher.renderPanel(); //Обновление переключателя слоев
+          personalLayerGroup.getLayers().push(newlayer); //добавление слоя в группу
+          //downLayer.push(newlayer);
         })
       })
+      map.addLayer(personalLayerGroup);
+      listLayer();
     }
   })
-
-  map.addLayer(personalLayerGroup); //Добавление группы слоев на карту
-
 }
 
-$.ajax({
-  type: "DELETE",
-  headers: {
-    "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
-  },
-  url: "http://localhost:8080/geoserver/rest/workspaces/d1b7c79a-a2c9-49b6-aa3a-873ca06b04d6/datastores/123_123/?recurse=true",
-  success: function (result) {
-    console.log(result);
-    console.log("успех");
-  },
-  error: function (error) {
-    console.log(error);
-    console.log("error");
-  }
-})
 
-map.addLayer(overlayLayerGroup); //Добавление группы слоев на карту
 
+function listLayer() {
+  layerSwitcher.renderPanel();
+  var delButton = document.createElement('button');
+  var img = document.createElement('img');
+  img.className = "rubbish"
+  delButton.appendChild(img);
+  delButton.className = "myButton";
+  delButton.id = "delButton";
+  var delElement = document.createElement('div');
+  delElement.className = "containerButtonDiv";
+  delElement.id = "delButtonDiv";
+  delElement.appendChild(delButton);
+
+  var delControl = new ol.control.Control({
+    element: delElement
+  });
+
+  var delFlag = false;
+  map.addControl(delControl);
+
+  delButton.addEventListener("click", () => {
+    delButton.classList.toggle("cliked");
+    delFlag = !delFlag;
+    var personalLayers = personalLayerGroup.getLayers().array_;
+    personalLayers.forEach(layer => {
+      if (layer.values_.visible == true) {
+        $.ajax({
+          type: "DELETE",
+          headers: {
+            "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
+          },
+          url: 'http://localhost:8080/geoserver/rest/workspaces/' + userId + '/datastores/' + layer.values_.title + '/?recurse=true',
+          success: function (result) {
+            console.log(result);
+            console.log("успех");
+            personalLayerGroup.getLayers().pop(layer);
+          },
+          error: function (error) {
+            console.log(error);
+            console.log("error");
+          }
+        })
+
+      }
+    });
+    layerSwitcher.renderPanel();
+  });
+}
 
 //---------------
 var lenthButton = document.createElement('button');
@@ -295,7 +323,6 @@ img2.className = "square"
 areaButton.appendChild(img2);
 areaButton.className = "myButton";
 areaButton.id = "areaButton";
-
 
 var areaElement = document.createElement('div');
 areaElement.className = "containerButtonDiv";
@@ -400,7 +427,6 @@ exportButton.addEventListener("click", () => {
   map.renderSync();
 });
 map.addControl(exportControl); //Добавление кнопки экспорта на карту
-
 
 var source = new ol.source.Vector();
 const vector = new ol.layer.Vector({
@@ -517,7 +543,7 @@ function addInteraction(intType) {
   draw.on('drawstart', function (evt) {
     // set sketch
     sketch = evt.feature;
-  
+
     /** @type {import("../src/ol/coordinate.js").Coordinate|undefined} */
     let tooltipCoord = evt.coordinate;
 
@@ -604,4 +630,4 @@ var formatArea = function (polygon) {
   }
   return output;
 };
-//addInteraction();
+addInteraction();

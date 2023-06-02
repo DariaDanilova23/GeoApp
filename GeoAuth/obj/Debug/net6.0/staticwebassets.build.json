@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yS/yaiN4ziMz4Nh7xZLPDssq2f/km5f3YxiiMwdH7i8=",
+  "Hash": "uvv7BrbD8ALK81TEyb9+zwJwLP5ww9QR5zIWO1uHgxs=",
   "Source": "GeoAuth",
   "BasePath": "_content/GeoAuth",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\print.png"
+    },
+    {
+      "Identity": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\wwwroot\\img\\rubbish.png",
+      "SourceId": "GeoAuth",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\wwwroot\\",
+      "BasePath": "_content/GeoAuth",
+      "RelativePath": "img/rubbish.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\rubbish.png"
     },
     {
       "Identity": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\wwwroot\\img\\ruler.png",

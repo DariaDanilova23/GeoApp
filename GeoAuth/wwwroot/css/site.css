@@ -128,6 +128,11 @@ header~.container {
   position: relative;
   width: 100%;
 }
+.rubbish {
+  content: url("../img/rubbish.png");
+  position: relative;
+  width: 100%;
+}
 /*.sidebar label{
   display: block;
 }*/
@@ -175,6 +180,9 @@ header~.container {
   top: 240px;
 }
 
+#delButtonDiv{
+  top: 270px;
+}
 
 .ol-popup {
   position: absolute;

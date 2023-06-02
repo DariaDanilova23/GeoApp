@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using System.Text;
 
+
 namespace GeoAuth.Controllers
 {
     [Authorize]
@@ -100,16 +101,12 @@ namespace GeoAuth.Controllers
 
         public async Task<IActionResult> DeleteFile()
         {
-            String sUrl = "http://localhost:8080/geoserver/rest/workspaces/d1b7c79a-a2c9-49b6-aa3a-873ca06b04d6/datastores/3001/featuretypes/3001/?recurse=true";
-
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            // String sUrl = "http://localhost:8080/geoserver/rest/workspaces/" + userId + "/datastores/" +_+ "/?recurse=true";
+            String sUrl = "http://localhost:8080/geoserver/rest/workspaces/geoportal/datastores/layerToCheck/?recurse=true";
             WebRequest request = WebRequest.Create(sUrl);
+            request.Credentials = new System.Net.NetworkCredential("admin", "geoserver");
             request.Method = "DELETE";
-            string _auth = string.Format("{0}:{1}", "admin","geoserver");
-            string _enc = Convert.ToBase64String(Encoding.ASCII.GetBytes(_auth));
-            string _cred = string.Format("{0} {1}", "Basic", _enc);
-            request.Headers[HttpRequestHeader.Authorization] = _cred;
-           // request.Headers.Add("Authorization": "Basic " + btoa("admin" + ":" + "geoserver"));
-            //request.Credentials = new NetworkCredential("admin", "geoserver");
 
             WebResponse response = request.GetResponse(); //получение ответа от Geoserver
             Console.Write("Response from GeoServer: " + response);

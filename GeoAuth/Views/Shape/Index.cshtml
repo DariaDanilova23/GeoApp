@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.1/dist/ol-layerswitcher.css" />
 
 }
- <form asp-action="DeleteFile" asp-controller="Shape">
-            <button type="submit">Удалить</button>
-</form>
 <div class="row">
     <div class="col-md-4">
         <h3 class="center-h1">Загрузка shape-файла</h3>
         <form asp-action="AddFile" asp-controller="Shape" method="post" enctype="multipart/form-data"> <!--Вызов действи AddFile при отправки формы-->
-            <input type="file" name="uploadedFile" accept=".shp"><br>
+            <input type="file" name="uploadedFile"><br>
             <label for="fname">Название карты:</label>
             <input type="text" id="fname" name="fname"><br>
             <button type="submit" class="btn btn-primary" value="Загрузить">Загрузить</button>

@@ -1,0 +1,4393 @@
+SF:c:\Users\dddan\GeoApp\GeoAuth\Program.cs
+FN:16,System.Void Program/<>c::<Main>b__0_1(Microsoft.AspNetCore.Identity.IdentityOptions)
+FNDA:0,System.Void Program/<>c::<Main>b__0_1(Microsoft.AspNetCore.Identity.IdentityOptions)
+DA:17,0
+FN:13,System.Void Program/<>c__DisplayClass0_0::<Main>b__0(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+FNDA:0,System.Void Program/<>c__DisplayClass0_0::<Main>b__0(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+DA:14,0
+FN:7,System.Void Program/<Main>d__0::MoveNext()
+FNDA:0,System.Void Program/<Main>d__0::MoveNext()
+DA:8,0
+DA:9,0
+DA:12,0
+DA:13,0
+DA:15,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:71,0
+DA:73,0
+DA:75,0
+DA:77,0
+DA:80,0
+DA:82,0
+DA:83,0
+BRDA:8,17,0,0
+BRDA:25,255,0,0
+BRDA:25,255,1,0
+BRDA:52,815,1,0
+BRDA:54,661,0,0
+BRDA:54,661,1,0
+BRDA:52,815,0,0
+BRDA:8,17,1,0
+BRDA:65,1110,0,0
+BRDA:65,1110,1,0
+LF:54
+LH:0
+BRF:10
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\AccessDenied.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_AccessDenied/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_AccessDenied/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:8,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ConfirmEmail.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ConfirmEmail/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ConfirmEmail/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:7,0
+DA:8,0
+BRDA:8,511,0,0
+BRDA:8,511,1,0
+LF:3
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ConfirmEmailChange/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ConfirmEmailChange/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:7,0
+DA:8,0
+BRDA:8,511,0,0
+BRDA:8,511,1,0
+LF:3
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ExternalLogin.cshtml
+FN:19,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ExternalLogin/<<ExecuteAsync>b__18_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ExternalLogin/<<ExecuteAsync>b__18_0>d::MoveNext()
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+BRDA:20,451,0,0
+BRDA:20,451,1,0
+BRDA:22,1066,0,0
+BRDA:22,1066,1,0
+BRDA:23,1703,0,0
+BRDA:23,1703,1,0
+BRDA:24,2340,0,0
+BRDA:24,2340,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ExternalLogin/<ExecuteAsync>d__18::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ExternalLogin/<ExecuteAsync>d__18::MoveNext()
+DA:4,0
+DA:7,0
+DA:8,0
+DA:12,0
+DA:19,0
+BRDA:12,443,0,0
+BRDA:12,443,1,0
+BRDA:19,826,0,0
+BRDA:19,826,1,0
+LF:9
+LH:0
+BRF:12
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ForgotPassword.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPassword/<<ExecuteAsync>b__19_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPassword/<<ExecuteAsync>b__19_0>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+BRDA:13,451,0,0
+BRDA:13,451,1,0
+BRDA:15,1066,0,0
+BRDA:15,1066,1,0
+BRDA:16,1747,0,0
+BRDA:16,1747,1,0
+BRDA:17,2384,0,0
+BRDA:17,2384,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPassword/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPassword/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+DA:7,0
+BRDA:7,475,0,0
+BRDA:7,475,1,0
+LF:6
+LH:0
+BRF:10
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPasswordConfirmation/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ForgotPasswordConfirmation/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Lockout.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Lockout/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Lockout/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:8,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Login.cshtml
+FN:13,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_0>d::MoveNext()
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:27,0
+DA:41,0
+BRDA:14,577,0,0
+BRDA:14,577,1,0
+BRDA:16,1192,0,0
+BRDA:16,1192,1,0
+BRDA:17,1873,0,0
+BRDA:17,1873,1,0
+BRDA:18,2510,0,0
+BRDA:18,2510,1,0
+BRDA:21,3125,0,0
+BRDA:21,3125,1,0
+BRDA:22,3808,0,0
+BRDA:22,3808,1,0
+BRDA:23,4447,0,0
+BRDA:23,4447,1,0
+BRDA:27,5050,0,0
+BRDA:27,5050,1,0
+BRDA:27,5566,0,0
+BRDA:27,5566,1,0
+BRDA:27,5934,0,0
+BRDA:27,5934,1,0
+BRDA:41,6267,0,0
+BRDA:41,6267,1,0
+BRDA:41,6783,0,0
+BRDA:41,6783,1,0
+FN:27,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_16>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_16>d::MoveNext()
+DA:28,0
+DA:29,0
+BRDA:28,470,0,0
+BRDA:28,470,1,0
+FN:68,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<<ExecuteAsync>b__30_1>d::MoveNext()
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+BRDA:69,521,1,0
+BRDA:69,521,0,0
+FN:4,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<ExecuteAsync>d__30::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Login/<ExecuteAsync>d__30::MoveNext()
+DA:5,0
+DA:8,0
+DA:55,0
+DA:56,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:76,0
+BRDA:8,537,0,0
+BRDA:8,537,1,0
+BRDA:55,739,0,0
+BRDA:55,739,1,0
+BRDA:55,757,0,0
+BRDA:55,757,1,0
+BRDA:65,1055,0,0
+BRDA:65,1055,1,0
+BRDA:66,1463,0,0
+BRDA:66,1463,1,0
+LF:23
+LH:0
+BRF:38
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\LoginWith2fa.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<<ExecuteAsync>b__22_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<<ExecuteAsync>b__22_0>d::MoveNext()
+DA:13,0
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:22,0
+BRDA:13,599,0,0
+BRDA:13,599,1,0
+BRDA:14,1135,0,0
+BRDA:14,1135,1,0
+BRDA:16,1747,0,0
+BRDA:16,1747,1,0
+BRDA:17,2403,0,0
+BRDA:17,2403,1,0
+BRDA:18,3037,0,0
+BRDA:18,3037,1,0
+BRDA:22,3637,0,0
+BRDA:22,3637,1,0
+FN:22,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<<ExecuteAsync>b__22_12>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<<ExecuteAsync>b__22_12>d::MoveNext()
+DA:23,0
+DA:24,0
+BRDA:23,470,0,0
+BRDA:23,470,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<ExecuteAsync>d__22::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWith2fa/<ExecuteAsync>d__22::MoveNext()
+DA:4,0
+DA:7,0
+DA:12,0
+DA:36,0
+BRDA:7,376,0,0
+BRDA:7,376,1,0
+BRDA:12,705,0,0
+BRDA:12,705,1,0
+BRDA:12,1094,0,0
+BRDA:12,1094,1,0
+BRDA:36,1426,0,0
+BRDA:36,1426,1,0
+LF:12
+LH:0
+BRF:22
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml
+FN:15,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWithRecoveryCode/<<ExecuteAsync>b__18_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWithRecoveryCode/<<ExecuteAsync>b__18_0>d::MoveNext()
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+BRDA:16,451,0,0
+BRDA:16,451,1,0
+BRDA:18,1066,0,0
+BRDA:18,1066,1,0
+BRDA:19,1725,0,0
+BRDA:19,1725,1,0
+BRDA:20,2362,0,0
+BRDA:20,2362,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWithRecoveryCode/<ExecuteAsync>d__18::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_LoginWithRecoveryCode/<ExecuteAsync>d__18::MoveNext()
+DA:4,0
+DA:7,0
+BRDA:7,475,0,0
+BRDA:7,475,1,0
+LF:6
+LH:0
+BRF:10
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Logout.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Logout/<ExecuteAsync>d__12::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Logout/<ExecuteAsync>d__12::MoveNext()
+DA:4,0
+DA:8,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:15,0
+DA:17,0
+DA:19,0
+BRDA:10,146,0,0
+BRDA:11,475,0,0
+BRDA:11,475,1,0
+BRDA:12,874,0,0
+BRDA:12,874,1,0
+BRDA:10,146,1,0
+LF:8
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ChangePassword/<<ExecuteAsync>b__22_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ChangePassword/<<ExecuteAsync>b__22_2>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+BRDA:13,559,0,0
+BRDA:13,559,1,0
+BRDA:15,1174,0,0
+BRDA:15,1174,1,0
+BRDA:16,1855,0,0
+BRDA:16,1855,1,0
+BRDA:17,2492,0,0
+BRDA:17,2492,1,0
+BRDA:20,3107,0,0
+BRDA:20,3107,1,0
+BRDA:21,3790,0,0
+BRDA:21,3790,1,0
+BRDA:22,4429,0,0
+BRDA:22,4429,1,0
+BRDA:25,5046,0,0
+BRDA:25,5046,1,0
+BRDA:26,5729,0,0
+BRDA:26,5729,1,0
+BRDA:27,6368,0,0
+BRDA:27,6368,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ChangePassword/<ExecuteAsync>d__22::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ChangePassword/<ExecuteAsync>d__22::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:9,631,0,0
+BRDA:9,631,1,0
+BRDA:9,1195,0,0
+BRDA:9,1195,1,0
+LF:14
+LH:0
+BRF:24
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml
+FN:17,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DeletePersonalData/<<ExecuteAsync>b__21_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DeletePersonalData/<<ExecuteAsync>b__21_0>d::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+BRDA:18,451,0,0
+BRDA:18,451,1,0
+BRDA:19,656,0,0
+BRDA:22,1109,0,0
+BRDA:22,1109,1,0
+BRDA:23,1790,0,0
+BRDA:23,1790,1,0
+BRDA:24,2427,0,0
+BRDA:24,2427,1,0
+BRDA:19,656,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DeletePersonalData/<ExecuteAsync>d__21::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DeletePersonalData/<ExecuteAsync>d__21::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+BRDA:8,546,0,0
+BRDA:8,546,1,0
+LF:10
+LH:0
+BRF:12
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa/<ExecuteAsync>d__14::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa/<ExecuteAsync>d__14::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:8,599,0,0
+BRDA:8,599,1,0
+BRDA:9,1141,0,0
+BRDA:9,1141,1,0
+BRDA:9,1705,0,0
+BRDA:9,1705,1,0
+LF:4
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DownloadPersonalData/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_DownloadPersonalData/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Email.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Email/<<ExecuteAsync>b__29_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Email/<<ExecuteAsync>b__29_1>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:24,0
+DA:26,0
+DA:27,0
+DA:29,0
+DA:32,0
+DA:33,0
+DA:34,0
+BRDA:13,541,0,0
+BRDA:13,541,1,0
+BRDA:15,1136,0,0
+BRDA:15,1136,1,0
+BRDA:16,1341,0,0
+BRDA:19,1880,0,0
+BRDA:19,1880,1,0
+BRDA:16,1341,1,0
+BRDA:27,2605,0,0
+BRDA:27,2605,1,0
+BRDA:27,3163,0,0
+BRDA:27,3163,1,0
+BRDA:32,3798,0,0
+BRDA:32,3798,1,0
+BRDA:33,4481,0,0
+BRDA:33,4481,1,0
+BRDA:34,5120,0,0
+BRDA:34,5120,1,0
+BRDA:34,5680,0,0
+BRDA:34,5680,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Email/<ExecuteAsync>d__29::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Email/<ExecuteAsync>d__29::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:9,561,0,0
+BRDA:9,561,1,0
+BRDA:9,1125,0,0
+BRDA:9,1125,1,0
+LF:16
+LH:0
+BRF:24
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml
+FN:37,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator/<<ExecuteAsync>b__21_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator/<<ExecuteAsync>b__21_2>d::MoveNext()
+DA:38,0
+DA:39,0
+DA:40,0
+DA:43,0
+BRDA:38,537,0,0
+BRDA:38,537,1,0
+BRDA:39,1193,0,0
+BRDA:39,1193,1,0
+BRDA:40,1827,0,0
+BRDA:40,1827,1,0
+BRDA:43,2363,0,0
+BRDA:43,2363,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator/<ExecuteAsync>d__21::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator/<ExecuteAsync>d__21::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+DA:24,0
+DA:27,0
+BRDA:8,581,0,0
+BRDA:8,581,1,0
+BRDA:27,1301,0,0
+BRDA:27,1301,1,0
+LF:10
+LH:0
+BRF:12
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml
+FN:45,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<<ExecuteAsync>b__19_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<<ExecuteAsync>b__19_2>d::MoveNext()
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+BRDA:46,639,1,0
+BRDA:46,639,0,0
+FN:22,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<>c__DisplayClass19_0/<<ExecuteAsync>b__3>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<>c__DisplayClass19_0/<<ExecuteAsync>b__3>d::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+BRDA:23,711,0,0
+BRDA:23,711,1,0
+BRDA:24,1566,0,0
+BRDA:24,1566,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ExternalLogins/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:28,0
+DA:30,0
+DA:32,0
+DA:35,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:53,0
+BRDA:8,594,0,0
+BRDA:8,594,1,0
+BRDA:9,796,0,0
+BRDA:9,796,1,0
+BRDA:9,814,0,0
+BRDA:14,1952,1,0
+BRDA:19,1149,0,0
+BRDA:21,1692,0,0
+BRDA:21,1692,1,0
+BRDA:19,1149,1,0
+BRDA:14,1952,0,0
+BRDA:9,814,1,0
+BRDA:39,2026,0,0
+BRDA:39,2026,1,0
+BRDA:39,2044,0,0
+BRDA:40,2522,0,0
+BRDA:40,2522,1,0
+BRDA:39,2044,1,0
+LF:26
+LH:0
+BRF:24
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_GenerateRecoveryCodes/<ExecuteAsync>d__14::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_GenerateRecoveryCodes/<ExecuteAsync>d__14::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:8,599,0,0
+BRDA:8,599,1,0
+BRDA:9,1141,0,0
+BRDA:9,1141,1,0
+BRDA:9,1705,0,0
+BRDA:9,1705,1,0
+LF:4
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Index.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Index/<<ExecuteAsync>b__19_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Index/<<ExecuteAsync>b__19_1>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:19,0
+DA:20,0
+DA:21,0
+BRDA:13,487,0,0
+BRDA:13,487,1,0
+BRDA:15,1082,0,0
+BRDA:15,1082,1,0
+BRDA:16,1783,0,0
+BRDA:16,1783,1,0
+BRDA:19,2398,0,0
+BRDA:19,2398,1,0
+BRDA:20,3035,0,0
+BRDA:20,3035,1,0
+BRDA:21,3674,0,0
+BRDA:21,3674,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Index/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Index/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:9,561,0,0
+BRDA:9,561,1,0
+BRDA:9,1125,0,0
+BRDA:9,1125,1,0
+LF:10
+LH:0
+BRF:16
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_PersonalData/<ExecuteAsync>d__18::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_PersonalData/<ExecuteAsync>d__18::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+BRDA:8,623,0,0
+BRDA:8,623,1,0
+BRDA:8,1159,0,0
+BRDA:8,1159,1,0
+LF:3
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ResetAuthenticator/<ExecuteAsync>d__13::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ResetAuthenticator/<ExecuteAsync>d__13::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+BRDA:8,581,0,0
+BRDA:8,581,1,0
+BRDA:9,1217,0,0
+BRDA:9,1217,1,0
+LF:4
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml
+FN:16,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_SetPassword/<<ExecuteAsync>b__19_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_SetPassword/<<ExecuteAsync>b__19_2>d::MoveNext()
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:24,0
+DA:25,0
+DA:26,0
+BRDA:17,505,0,0
+BRDA:17,505,1,0
+BRDA:19,1120,0,0
+BRDA:19,1120,1,0
+BRDA:20,1757,0,0
+BRDA:20,1757,1,0
+BRDA:21,2394,0,0
+BRDA:21,2394,1,0
+BRDA:24,3009,0,0
+BRDA:24,3009,1,0
+BRDA:25,3648,0,0
+BRDA:25,3648,1,0
+BRDA:26,4287,0,0
+BRDA:26,4287,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_SetPassword/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_SetPassword/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+DA:5,0
+DA:9,0
+BRDA:9,581,0,0
+BRDA:9,581,1,0
+BRDA:9,1145,0,0
+BRDA:9,1145,1,0
+LF:10
+LH:0
+BRF:18
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ShowRecoveryCodes/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_ShowRecoveryCodes/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+BRDA:8,558,0,0
+BRDA:8,558,1,0
+BRDA:20,1008,1,0
+BRDA:20,1008,0,0
+LF:8
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_TwoFactorAuthentication/<ExecuteAsync>d__21::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_TwoFactorAuthentication/<ExecuteAsync>d__21::MoveNext()
+DA:4,0
+DA:5,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:29,0
+DA:32,0
+DA:34,0
+DA:35,0
+DA:39,0
+DA:42,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:50,0
+DA:53,0
+BRDA:8,725,0,0
+BRDA:8,725,1,0
+BRDA:10,980,0,0
+BRDA:12,1009,0,0
+BRDA:13,1339,0,0
+BRDA:13,1339,1,0
+BRDA:12,1009,1,0
+BRDA:19,1553,0,0
+BRDA:20,1883,0,0
+BRDA:20,1883,1,0
+BRDA:19,1553,1,0
+BRDA:26,2100,0,0
+BRDA:29,2480,0,0
+BRDA:29,2480,1,0
+BRDA:26,2100,1,0
+BRDA:34,2686,0,0
+BRDA:35,3088,0,0
+BRDA:35,3088,1,0
+BRDA:34,2686,1,0
+BRDA:39,3622,0,0
+BRDA:39,3622,1,0
+BRDA:39,4138,0,0
+BRDA:39,4138,1,0
+BRDA:10,980,1,0
+BRDA:45,4365,0,0
+BRDA:46,4740,0,0
+BRDA:46,4740,1,0
+BRDA:45,4365,1,0
+BRDA:50,5302,0,0
+BRDA:50,5302,1,0
+BRDA:50,5840,0,0
+BRDA:50,5840,1,0
+LF:25
+LH:0
+BRF:32
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\_Layout.cshtml
+FN:24,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__Layout/<<ExecuteAsync>b__8_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__Layout/<<ExecuteAsync>b__8_1>d::MoveNext()
+DA:25,0
+FN:1,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__Layout/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__Layout/<ExecuteAsync>d__8::MoveNext()
+DA:2,0
+DA:3,0
+DA:4,0
+DA:5,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:19,0
+BRDA:2,58,0,0
+BRDA:2,58,1,0
+BRDA:9,441,0,0
+BRDA:9,441,1,0
+LF:9
+LH:0
+BRF:4
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__ManageNav/<ExecuteAsync>d__17::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__ManageNav/<ExecuteAsync>d__17::MoveNext()
+DA:3,0
+DA:6,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+BRDA:6,723,0,0
+BRDA:6,723,1,0
+BRDA:7,1370,0,0
+BRDA:7,1370,1,0
+BRDA:8,2017,0,0
+BRDA:8,2017,1,0
+BRDA:9,2212,0,0
+BRDA:11,2697,0,0
+BRDA:11,2697,1,0
+BRDA:9,2212,1,0
+BRDA:14,3408,0,0
+BRDA:14,3408,1,0
+LF:10
+LH:0
+BRF:12
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__StatusMessage/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage__StatusMessage/<ExecuteAsync>d__0::MoveNext()
+DA:3,0
+DA:4,0
+DA:5,0
+DA:6,0
+DA:8,0
+DA:10,0
+BRDA:3,46,0,0
+BRDA:5,74,0,0
+BRDA:5,74,1,0
+BRDA:3,46,1,0
+LF:6
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Register.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<<ExecuteAsync>b__23_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<<ExecuteAsync>b__23_0>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+BRDA:13,559,0,0
+BRDA:13,559,1,0
+BRDA:15,1174,0,0
+BRDA:15,1174,1,0
+BRDA:16,1855,0,0
+BRDA:16,1855,1,0
+BRDA:17,2492,0,0
+BRDA:17,2492,1,0
+BRDA:20,3107,0,0
+BRDA:20,3107,1,0
+BRDA:21,3790,0,0
+BRDA:21,3790,1,0
+BRDA:22,4429,0,0
+BRDA:22,4429,1,0
+BRDA:25,5046,0,0
+BRDA:25,5046,1,0
+BRDA:26,5729,0,0
+BRDA:26,5729,1,0
+BRDA:27,6368,0,0
+BRDA:27,6368,1,0
+FN:50,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<<ExecuteAsync>b__23_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<<ExecuteAsync>b__23_1>d::MoveNext()
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+BRDA:51,521,1,0
+BRDA:51,521,0,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<ExecuteAsync>d__23::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Register/<ExecuteAsync>d__23::MoveNext()
+DA:4,0
+DA:7,0
+DA:11,0
+DA:37,0
+DA:38,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:58,0
+BRDA:7,322,0,0
+BRDA:7,322,1,0
+BRDA:11,705,0,0
+BRDA:11,705,1,0
+BRDA:37,907,0,0
+BRDA:37,907,1,0
+BRDA:37,925,0,0
+BRDA:37,925,1,0
+BRDA:47,1223,0,0
+BRDA:47,1223,1,0
+BRDA:48,1631,0,0
+BRDA:48,1631,1,0
+LF:23
+LH:0
+BRF:34
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_RegisterConfirmation/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_RegisterConfirmation/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:7,0
+DA:9,0
+DA:10,0
+DA:13,0
+DA:15,0
+DA:17,0
+DA:21,0
+BRDA:9,120,0,0
+BRDA:9,120,1,0
+LF:8
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResendEmailConfirmation/<<ExecuteAsync>b__19_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResendEmailConfirmation/<<ExecuteAsync>b__19_0>d::MoveNext()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+BRDA:13,451,0,0
+BRDA:13,451,1,0
+BRDA:15,1066,0,0
+BRDA:15,1066,1,0
+BRDA:16,1747,0,0
+BRDA:16,1747,1,0
+BRDA:17,2384,0,0
+BRDA:17,2384,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResendEmailConfirmation/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResendEmailConfirmation/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+DA:7,0
+BRDA:7,475,0,0
+BRDA:7,475,1,0
+LF:6
+LH:0
+BRF:10
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResetPassword.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPassword/<<ExecuteAsync>b__21_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPassword/<<ExecuteAsync>b__21_0>d::MoveNext()
+DA:13,0
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:26,0
+DA:27,0
+DA:28,0
+BRDA:13,577,0,0
+BRDA:13,577,1,0
+BRDA:14,1246,0,0
+BRDA:14,1246,1,0
+BRDA:16,1861,0,0
+BRDA:16,1861,1,0
+BRDA:17,2542,0,0
+BRDA:17,2542,1,0
+BRDA:18,3179,0,0
+BRDA:18,3179,1,0
+BRDA:21,3796,0,0
+BRDA:21,3796,1,0
+BRDA:22,4479,0,0
+BRDA:22,4479,1,0
+BRDA:23,5118,0,0
+BRDA:23,5118,1,0
+BRDA:26,5735,0,0
+BRDA:26,5735,1,0
+BRDA:27,6418,0,0
+BRDA:27,6418,1,0
+BRDA:28,7057,0,0
+BRDA:28,7057,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPassword/<ExecuteAsync>d__21::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPassword/<ExecuteAsync>d__21::MoveNext()
+DA:4,0
+DA:7,0
+BRDA:7,475,0,0
+BRDA:7,475,1,0
+LF:13
+LH:0
+BRF:24
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPasswordConfirmation/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_ResetPasswordConfirmation/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:7,0
+BRDA:7,425,0,0
+BRDA:7,425,1,0
+LF:2
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\_StatusMessage.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account__StatusMessage/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account__StatusMessage/<ExecuteAsync>d__0::MoveNext()
+DA:3,0
+DA:4,0
+DA:5,0
+DA:6,0
+DA:8,0
+DA:10,0
+BRDA:3,46,0,0
+BRDA:5,74,0,0
+BRDA:5,74,1,0
+BRDA:3,46,1,0
+LF:6
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Error.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Error/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages_Error/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:10,0
+DA:11,0
+DA:13,0
+DA:15,0
+BRDA:10,70,0,0
+BRDA:10,70,1,0
+LF:5
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\_ViewStart.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages__ViewStart/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Areas_Identity_Pages__ViewStart/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Admin\Index.cshtml
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__13::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__13::MoveNext()
+DA:5,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:29,0
+BRDA:16,1850,1,0
+BRDA:21,502,0,0
+BRDA:21,502,1,0
+BRDA:22,848,0,0
+BRDA:22,848,1,0
+BRDA:22,1265,0,0
+BRDA:22,1265,1,0
+BRDA:24,1646,0,0
+BRDA:24,1646,1,0
+BRDA:16,1850,0,0
+LF:9
+LH:0
+BRF:10
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Admin\ManageUserRoles.cshtml
+FN:19,System.Void AspNetCoreGeneratedDocument.Views_Admin_ManageUserRoles/<<ExecuteAsync>b__11_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Admin_ManageUserRoles/<<ExecuteAsync>b__11_0>d::MoveNext()
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+BRDA:20,43,1,0
+BRDA:20,43,0,0
+BRDA:20,103,1,0
+BRDA:20,103,0,0
+BRDA:20,1033,1,0
+BRDA:22,417,1,0
+BRDA:22,417,0,0
+BRDA:22,509,1,0
+BRDA:22,509,0,0
+BRDA:22,829,0,0
+BRDA:22,829,1,0
+BRDA:20,1033,0,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Admin_ManageUserRoles/<ExecuteAsync>d__11::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Admin_ManageUserRoles/<ExecuteAsync>d__11::MoveNext()
+DA:3,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+BRDA:9,95,1,0
+BRDA:9,95,0,0
+BRDA:9,187,1,0
+BRDA:9,187,0,0
+BRDA:9,258,1,0
+BRDA:9,258,0,0
+BRDA:10,373,1,0
+BRDA:10,373,0,0
+BRDA:10,465,1,0
+BRDA:10,465,0,0
+BRDA:10,536,1,0
+BRDA:10,536,0,0
+BRDA:11,653,1,0
+BRDA:11,653,0,0
+BRDA:11,713,1,0
+BRDA:11,713,0,0
+BRDA:11,1066,1,0
+BRDA:13,855,1,0
+BRDA:13,855,0,0
+BRDA:13,947,1,0
+BRDA:13,947,0,0
+BRDA:11,1066,0,0
+BRDA:11,1354,0,0
+BRDA:11,1354,1,0
+BRDA:16,1406,1,0
+BRDA:16,1406,0,0
+BRDA:16,1498,1,0
+BRDA:16,1498,0,0
+BRDA:16,1569,1,0
+BRDA:16,1569,0,0
+BRDA:16,1971,0,0
+BRDA:16,1971,1,0
+LF:12
+LH:0
+BRF:48
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Home\Index.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
+DA:3,0
+DA:12,0
+DA:15,0
+BRDA:12,95,1,0
+BRDA:12,95,0,0
+BRDA:12,187,1,0
+BRDA:12,187,0,0
+BRDA:12,259,1,0
+BRDA:12,259,0,0
+BRDA:15,412,1,0
+BRDA:15,412,0,0
+BRDA:15,564,1,0
+BRDA:15,564,0,0
+BRDA:15,636,1,0
+BRDA:15,636,0,0
+BRDA:15,1050,0,0
+BRDA:15,1050,1,0
+LF:3
+LH:0
+BRF:14
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Home\Privacy.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Home_Privacy/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Privacy/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+DA:4,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shape\Index.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__12::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__12::MoveNext()
+DA:2,0
+BRDA:2,572,0,0
+BRDA:2,572,1,0
+LF:1
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shared\Error.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()
+DA:3,0
+DA:9,0
+DA:10,0
+DA:12,0
+DA:14,0
+BRDA:9,70,0,0
+BRDA:9,70,1,0
+LF:5
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shared\_LoginPartial.cshtml
+FN:18,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__25_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__25_2>d::MoveNext()
+DA:19,0
+BRDA:19,31,0,0
+BRDA:19,31,1,0
+FN:5,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<ExecuteAsync>d__25::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<ExecuteAsync>d__25::MoveNext()
+DA:6,0
+DA:7,0
+DA:8,0
+DA:12,0
+DA:13,0
+DA:17,0
+DA:22,0
+DA:26,0
+DA:28,0
+DA:35,0
+BRDA:6,170,0,0
+BRDA:8,197,0,0
+BRDA:8,197,1,0
+BRDA:8,225,0,0
+BRDA:8,683,0,0
+BRDA:8,683,1,0
+BRDA:8,225,1,0
+BRDA:13,895,0,0
+BRDA:13,1356,0,0
+BRDA:13,1356,1,0
+BRDA:13,895,1,0
+BRDA:17,1966,0,0
+BRDA:17,1966,1,0
+BRDA:17,2460,0,0
+BRDA:17,2460,1,0
+BRDA:22,2813,0,0
+BRDA:22,2813,1,0
+BRDA:6,170,1,0
+BRDA:28,3407,0,0
+BRDA:28,3407,1,0
+BRDA:28,3979,0,0
+BRDA:28,3979,1,0
+LF:11
+LH:0
+BRF:24
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\_ViewStart.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views__ViewStart/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views__ViewStart/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shared\_Layout.cshtml
+FN:6,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__27_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__27_0>d::MoveNext()
+DA:7,0
+DA:9,0
+DA:10,0
+BRDA:7,443,0,0
+BRDA:7,443,1,0
+BRDA:9,1088,0,0
+BRDA:9,1088,1,0
+BRDA:10,1733,0,0
+BRDA:10,1733,1,0
+FN:38,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__27_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__27_1>d::MoveNext()
+DA:39,0
+DA:50,0
+DA:51,0
+BRDA:39,564,0,0
+BRDA:39,564,1,0
+BRDA:39,1087,0,0
+BRDA:39,1087,1,0
+BRDA:39,1601,0,0
+BRDA:39,1601,1,0
+BRDA:39,2075,0,0
+BRDA:39,2075,1,0
+BRDA:50,2698,0,0
+BRDA:50,2698,1,0
+LF:6
+LH:0
+BRF:16
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Models\ErrorViewModel.cs
+FN:4,System.String GeoAuth.Models.ErrorViewModel::get_RequestId()
+FNDA:0,System.String GeoAuth.Models.ErrorViewModel::get_RequestId()
+DA:5,0
+FN:6,System.Boolean GeoAuth.Models.ErrorViewModel::get_ShowRequestId()
+FNDA:0,System.Boolean GeoAuth.Models.ErrorViewModel::get_ShowRequestId()
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Data\ApplicationDbContext.cs
+FN:8,System.Void GeoAuth.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Data.ApplicationDbContext>)
+FNDA:0,System.Void GeoAuth.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Data.ApplicationDbContext>)
+DA:9,0
+DA:10,0
+DA:11,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Data\Migrations\00000000000000_CreateIdentitySchema.cs
+FN:8,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+FN:193,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:194,0
+DA:195,0
+DA:196,0
+DA:198,0
+DA:199,0
+DA:201,0
+DA:202,0
+DA:204,0
+DA:205,0
+DA:207,0
+DA:208,0
+DA:210,0
+DA:211,0
+DA:213,0
+DA:214,0
+DA:215,0
+LF:186
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+FN:15,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:16,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:268,0
+LF:239
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Data\Migrations\ApplicationDbContextModelSnapshot.cs
+FN:13,System.Void GeoAuth.Data.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void GeoAuth.Data.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:14,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:266,0
+LF:239
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Controllers\AdminController.cs
+FN:22,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.AdminController::Index()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.AdminController::Index()
+DA:23,0
+DA:25,0
+DA:26,0
+FN:62,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.AdminController::Error()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.AdminController::Error()
+DA:63,0
+DA:64,0
+DA:65,0
+BRDA:64,14,0,0
+BRDA:64,14,1,0
+BRDA:64,26,0,0
+BRDA:64,26,1,0
+FN:16,System.Void GeoAuth.Controllers.AdminController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,GeoAuth.Data.ApplicationDbContext)
+FNDA:0,System.Void GeoAuth.Controllers.AdminController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,GeoAuth.Data.ApplicationDbContext)
+DA:17,0
+DA:18,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:45,System.Void GeoAuth.Controllers.AdminController/<ChangeUser>d__6::MoveNext()
+FNDA:0,System.Void GeoAuth.Controllers.AdminController/<ChangeUser>d__6::MoveNext()
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+FN:39,System.Void GeoAuth.Controllers.AdminController/<DeleteUser>d__5::MoveNext()
+FNDA:0,System.Void GeoAuth.Controllers.AdminController/<DeleteUser>d__5::MoveNext()
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+FN:27,System.Void GeoAuth.Controllers.AdminController/<ManageUserRoles>d__4::MoveNext()
+FNDA:0,System.Void GeoAuth.Controllers.AdminController/<ManageUserRoles>d__4::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+BRDA:33,624,1,0
+BRDA:33,624,0,0
+BRDA:34,723,1,0
+BRDA:34,723,0,0
+BRDA:35,832,1,0
+BRDA:35,832,0,0
+BRDA:36,931,1,0
+BRDA:36,931,0,0
+BRDA:36,991,1,0
+BRDA:36,991,0,0
+LF:34
+LH:0
+BRF:14
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Controllers\HomeController.cs
+FN:21,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Index()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Index()
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+BRDA:23,28,0,0
+BRDA:24,36,1,0
+BRDA:24,36,0,0
+BRDA:23,28,1,0
+BRDA:27,155,1,0
+BRDA:27,155,0,0
+FN:32,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Privacy()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Privacy()
+DA:33,0
+DA:34,0
+DA:35,0
+FN:40,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Error()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Error()
+DA:41,0
+DA:42,0
+DA:43,0
+BRDA:42,14,0,0
+BRDA:42,14,1,0
+BRDA:42,26,0,0
+BRDA:42,26,1,0
+FN:13,System.Void GeoAuth.Controllers.HomeController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:1,System.Void GeoAuth.Controllers.HomeController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:14,1
+DA:15,1
+DA:18,1
+DA:19,1
+LF:19
+LH:4
+BRF:10
+BRH:0
+FNF:4
+FNH:1
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Controllers\ShapeController.cs
+FN:34,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Index()
+FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Index()
+DA:35,1
+DA:36,1
+DA:37,1
+FN:96,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
+DA:97,0
+DA:98,0
+DA:99,0
+BRDA:98,14,0,0
+BRDA:98,14,1,0
+BRDA:98,26,0,0
+BRDA:98,26,1,0
+FN:27,System.Void GeoAuth.Controllers.ShapeController::.ctor()
+FNDA:2,System.Void GeoAuth.Controllers.ShapeController::.ctor()
+DA:28,2
+DA:29,2
+DA:32,2
+FN:59,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__3::MoveNext()
+FNDA:1,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__3::MoveNext()
+DA:60,1
+DA:61,1
+DA:62,1
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:87,0
+DA:88,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+BRDA:64,111,0,0
+BRDA:64,111,1,0
+BRDA:69,257,0,0
+BRDA:69,257,1,0
+BRDA:74,325,0,0
+BRDA:74,325,1,0
+BRDA:74,343,0,0
+BRDA:74,343,1,0
+FN:39,System.Void GeoAuth.Controllers.ShapeController/<createdWorkspace>d__2::MoveNext()
+FNDA:0,System.Void GeoAuth.Controllers.ShapeController/<createdWorkspace>d__2::MoveNext()
+DA:40,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:56,0
+DA:57,0
+LF:55
+LH:9
+BRF:12
+BRH:0
+FNF:5
+FNH:3
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\IdentityHostingStartup.cs
+FN:15,System.Void GeoAuth.Areas.Identity.IdentityHostingStartup::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+FNDA:0,System.Void GeoAuth.Areas.Identity.IdentityHostingStartup::Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Error.cshtml.cs
+FN:11,System.String GeoAuth.Areas.Identity.Pages.ErrorModel::get_RequestId()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.ErrorModel::get_RequestId()
+DA:12,0
+FN:13,System.Boolean GeoAuth.Areas.Identity.Pages.ErrorModel::get_ShowRequestId()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.ErrorModel::get_ShowRequestId()
+DA:14,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.ErrorModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.ErrorModel::OnGet()
+DA:17,0
+DA:18,0
+DA:19,0
+BRDA:18,8,0,0
+BRDA:18,8,1,0
+BRDA:18,20,0,0
+BRDA:18,20,1,0
+LF:5
+LH:0
+BRF:4
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\AccessDenied.cshtml.cs
+FN:11,System.Void GeoAuth.Areas.Identity.Pages.Account.AccessDeniedModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.AccessDeniedModel::OnGet()
+DA:12,0
+DA:14,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.cs
+FN:24,System.String GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel::get_StatusMessage()
+DA:25,0
+FN:18,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:27,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel/<OnGetAsync>d__6::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailModel/<OnGetAsync>d__6::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+BRDA:29,35,0,0
+BRDA:29,35,1,0
+BRDA:29,51,0,0
+BRDA:29,51,1,0
+BRDA:35,226,0,0
+BRDA:35,226,1,0
+BRDA:42,457,0,0
+BRDA:42,457,1,0
+LF:18
+LH:0
+BRF:8
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.cs
+FN:26,System.String GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel::get_StatusMessage()
+DA:27,0
+FN:19,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+FN:29,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel/<OnGetAsync>d__7::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ConfirmEmailChangeModel/<OnGetAsync>d__7::MoveNext()
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+BRDA:31,58,0,0
+BRDA:31,66,0,0
+BRDA:31,58,1,0
+BRDA:31,66,1,0
+BRDA:31,82,0,0
+BRDA:31,82,1,0
+BRDA:37,257,0,0
+BRDA:37,257,1,0
+BRDA:44,495,0,0
+BRDA:44,495,1,0
+BRDA:53,696,0,0
+BRDA:53,696,1,0
+LF:29
+LH:0
+BRF:12
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ExternalLogin.cshtml.cs
+FN:39,GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_Input()
+DA:40,0
+FN:41,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ProviderDisplayName()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ProviderDisplayName()
+DA:42,0
+FN:43,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ReturnUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ReturnUrl()
+DA:44,0
+FN:46,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ErrorMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::get_ErrorMessage()
+DA:47,0
+FN:56,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::OnGetAsync()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::OnGetAsync()
+DA:57,0
+DA:58,0
+DA:59,0
+FN:61,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::OnPost(System.String,System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::OnPost(System.String,System.String)
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+FN:26,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+FN:52,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/InputModel::get_Email()
+DA:53,0
+FN:99,System.Boolean GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<>c::<OnGetCallbackAsync>b__24_0(System.Security.Claims.Claim)
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<>c::<OnGetCallbackAsync>b__24_0(System.Security.Claims.Claim)
+DA:100,0
+FN:69,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<OnGetCallbackAsync>d__24::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<OnGetCallbackAsync>d__24::MoveNext()
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:109,0
+BRDA:71,37,0,0
+BRDA:71,37,1,0
+BRDA:72,77,0,0
+BRDA:72,77,1,0
+BRDA:78,286,0,0
+BRDA:78,286,1,0
+BRDA:86,512,0,0
+BRDA:86,512,1,0
+BRDA:91,619,0,0
+BRDA:91,619,1,0
+BRDA:100,737,0,0
+BRDA:100,737,1,0
+FN:111,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<OnPostConfirmationAsync>d__25::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ExternalLoginModel/<OnPostConfirmationAsync>d__25::MoveNext()
+DA:112,0
+DA:113,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:143,0
+DA:144,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:152,0
+DA:154,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+BRDA:113,87,0,0
+BRDA:113,87,1,0
+BRDA:116,260,0,0
+BRDA:116,260,1,0
+BRDA:122,333,0,0
+BRDA:127,550,0,0
+BRDA:130,716,0,0
+BRDA:147,1326,0,0
+BRDA:147,1326,1,0
+BRDA:130,716,1,0
+BRDA:127,550,1,0
+BRDA:157,1618,1,0
+BRDA:157,1618,0,0
+BRDA:122,333,1,0
+LF:97
+LH:0
+BRF:26
+BRH:0
+FNF:11
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ForgotPassword.cshtml.cs
+FN:28,GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel::get_Input()
+DA:29,0
+FN:21,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+FN:34,System.String GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/InputModel::get_Email()
+DA:35,0
+FN:38,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/<OnPostAsync>d__8::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordModel/<OnPostAsync>d__8::MoveNext()
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:64,0
+DA:67,0
+DA:68,0
+BRDA:40,67,0,0
+BRDA:43,253,0,0
+BRDA:43,253,1,0
+BRDA:43,404,0,0
+BRDA:43,404,1,0
+BRDA:40,67,1,0
+LF:28
+LH:0
+BRF:6
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.cs
+FN:12,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordConfirmation::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ForgotPasswordConfirmation::OnGet()
+DA:13,0
+DA:14,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Lockout.cshtml.cs
+FN:13,System.Void GeoAuth.Areas.Identity.Pages.Account.LockoutModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LockoutModel::OnGet()
+DA:14,0
+DA:16,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Login.cshtml.cs
+FN:33,GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_Input()
+DA:34,0
+FN:35,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ExternalLogins()
+FNDA:0,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ExternalLogins()
+DA:36,0
+FN:37,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ReturnUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ReturnUrl()
+DA:38,0
+FN:40,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ErrorMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel::get_ErrorMessage()
+DA:41,0
+FN:23,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginModel>,Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginModel>,Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+FN:46,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_Email()
+DA:47,0
+FN:51,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_Password()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_Password()
+DA:52,0
+FN:54,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_RememberMe()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginModel/InputModel::get_RememberMe()
+DA:55,0
+FN:58,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel/<OnGetAsync>d__21::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel/<OnGetAsync>d__21::MoveNext()
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:68,0
+DA:70,0
+DA:72,0
+DA:73,0
+BRDA:60,50,0,0
+BRDA:60,50,1,0
+BRDA:65,93,0,0
+BRDA:65,93,1,0
+FN:75,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel/<OnPostAsync>d__22::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginModel/<OnPostAsync>d__22::MoveNext()
+DA:76,0
+DA:77,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:108,0
+DA:109,0
+BRDA:77,32,0,0
+BRDA:77,32,1,0
+BRDA:81,222,0,0
+BRDA:86,425,0,0
+BRDA:86,425,1,0
+BRDA:91,493,0,0
+BRDA:91,493,1,0
+BRDA:95,560,0,0
+BRDA:95,560,1,0
+BRDA:81,222,1,0
+LF:47
+LH:0
+BRF:14
+BRH:0
+FNF:10
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.cs
+FN:26,GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_Input()
+DA:27,0
+FN:28,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_RememberMe()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_RememberMe()
+DA:29,0
+FN:30,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_ReturnUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::get_ReturnUrl()
+DA:31,0
+FN:19,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel>)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+FN:38,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel::get_TwoFactorCode()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel::get_TwoFactorCode()
+DA:39,0
+FN:41,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel::get_RememberMachine()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/InputModel::get_RememberMachine()
+DA:42,0
+FN:45,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/<OnGetAsync>d__16::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/<OnGetAsync>d__16::MoveNext()
+DA:46,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:59,0
+BRDA:50,158,0,0
+BRDA:50,158,1,0
+FN:61,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/<OnPostAsync>d__17::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWith2faModel/<OnPostAsync>d__17::MoveNext()
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:76,0
+DA:78,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:96,0
+BRDA:63,50,0,0
+BRDA:63,50,1,0
+BRDA:68,78,0,0
+BRDA:68,78,1,0
+BRDA:71,251,0,0
+BRDA:71,251,1,0
+BRDA:80,494,0,0
+BRDA:80,494,1,0
+BRDA:85,577,0,0
+BRDA:85,577,1,0
+LF:43
+LH:0
+BRF:12
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.cs
+FN:26,GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/InputModel GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::get_Input()
+DA:27,0
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::get_ReturnUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::get_ReturnUrl()
+DA:29,0
+FN:19,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel>)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+FN:36,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/InputModel::get_RecoveryCode()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/InputModel::get_RecoveryCode()
+DA:37,0
+FN:40,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/<OnGetAsync>d__12::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/<OnGetAsync>d__12::MoveNext()
+DA:41,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:49,0
+DA:51,0
+DA:52,0
+BRDA:44,158,0,0
+BRDA:44,158,1,0
+FN:54,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/<OnPostAsync>d__13::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel/<OnPostAsync>d__13::MoveNext()
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:67,0
+DA:69,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:87,0
+BRDA:56,47,0,0
+BRDA:56,47,1,0
+BRDA:62,211,0,0
+BRDA:62,211,1,0
+BRDA:71,417,0,0
+BRDA:74,475,0,0
+BRDA:74,475,1,0
+BRDA:71,417,1,0
+BRDA:76,525,0,0
+BRDA:76,525,1,0
+LF:39
+LH:0
+BRF:12
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Logout.cshtml.cs
+FN:25,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel::OnGet()
+DA:26,0
+DA:27,0
+FN:18,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LogoutModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel::.ctor(Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.LogoutModel>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:29,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel/<OnPost>d__4::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.LogoutModel/<OnPost>d__4::MoveNext()
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:38,0
+DA:39,0
+DA:41,0
+BRDA:33,161,0,0
+BRDA:33,161,1,0
+LF:16
+LH:0
+BRF:2
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Register.cshtml.cs
+FN:42,GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_Input()
+DA:43,0
+FN:44,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_ReturnUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_ReturnUrl()
+DA:45,0
+FN:46,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_ExternalLogins()
+FNDA:0,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.RegisterModel::get_ExternalLogins()
+DA:47,0
+FN:27,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.RegisterModel>,Microsoft.AspNetCore.Identity.RoleManager`1<Microsoft.AspNetCore.Identity.IdentityRole>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.RegisterModel>,Microsoft.AspNetCore.Identity.RoleManager`1<Microsoft.AspNetCore.Identity.IdentityRole>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+FN:53,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_Email()
+DA:54,0
+FN:59,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_Password()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_Password()
+DA:60,0
+FN:64,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_ConfirmPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterModel/InputModel::get_ConfirmPassword()
+DA:65,0
+FN:68,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel/<OnGetAsync>d__19::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel/<OnGetAsync>d__19::MoveNext()
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+FN:74,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel/<OnPostAsync>d__20::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterModel/<OnPostAsync>d__20::MoveNext()
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:99,0
+DA:100,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:119,0
+DA:120,0
+BRDA:76,76,0,0
+BRDA:76,76,1,0
+BRDA:78,266,0,0
+BRDA:82,499,0,0
+BRDA:87,577,0,0
+BRDA:87,577,1,0
+BRDA:102,1175,0,0
+BRDA:102,1175,1,0
+BRDA:82,499,1,0
+BRDA:112,1463,1,0
+BRDA:112,1463,0,0
+BRDA:78,266,1,0
+LF:60
+LH:0
+BRF:12
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.cs
+FN:23,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_Email()
+DA:24,0
+FN:25,System.Boolean GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_DisplayConfirmAccountLink()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_DisplayConfirmAccountLink()
+DA:26,0
+FN:27,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_EmailConfirmationUrl()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::get_EmailConfirmationUrl()
+DA:28,0
+FN:17,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:30,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel/<OnGetAsync>d__15::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.RegisterConfirmationModel/<OnGetAsync>d__15::MoveNext()
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:59,0
+BRDA:32,51,0,0
+BRDA:32,51,1,0
+BRDA:38,226,0,0
+BRDA:38,226,1,0
+BRDA:46,313,0,0
+BRDA:46,313,1,0
+LF:31
+LH:0
+BRF:6
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml.cs
+FN:28,GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::get_Input()
+DA:29,0
+FN:38,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::OnGet()
+DA:39,0
+DA:40,0
+FN:21,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+FN:34,System.String GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/InputModel::get_Email()
+DA:35,0
+FN:42,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/<OnPostAsync>d__9::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResendEmailConfirmationModel/<OnPostAsync>d__9::MoveNext()
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:70,0
+DA:71,0
+BRDA:44,73,0,0
+BRDA:44,73,1,0
+BRDA:50,253,0,0
+BRDA:50,253,1,0
+LF:33
+LH:0
+BRF:4
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResetPassword.cshtml.cs
+FN:25,GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::get_Input()
+DA:26,0
+FN:47,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::OnGet(System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::OnGet(System.String)
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+BRDA:49,7,0,0
+BRDA:49,7,1,0
+FN:19,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:31,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Email()
+DA:32,0
+FN:36,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Password()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Password()
+DA:37,0
+FN:41,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_ConfirmPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_ConfirmPassword()
+DA:42,0
+FN:43,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Code()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/InputModel::get_Code()
+DA:44,0
+FN:63,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/<OnPostAsync>d__8::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordModel/<OnPostAsync>d__8::MoveNext()
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:74,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+BRDA:65,50,0,0
+BRDA:65,50,1,0
+BRDA:71,230,0,0
+BRDA:71,230,1,0
+BRDA:78,442,0,0
+BRDA:78,442,1,0
+BRDA:83,562,1,0
+BRDA:83,562,0,0
+LF:38
+LH:0
+BRF:10
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.cs
+FN:13,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel::OnGet()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel::OnGet()
+DA:14,0
+DA:16,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.cs
+FN:28,GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::get_Input()
+DA:29,0
+FN:31,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::get_StatusMessage()
+DA:32,0
+FN:17,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel>)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+FN:38,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_OldPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_OldPassword()
+DA:39,0
+FN:44,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_NewPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_NewPassword()
+DA:45,0
+FN:49,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_ConfirmPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/InputModel::get_ConfirmPassword()
+DA:50,0
+FN:53,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/<OnGetAsync>d__13::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/<OnGetAsync>d__13::MoveNext()
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:67,0
+DA:68,0
+BRDA:56,180,0,0
+BRDA:56,180,1,0
+BRDA:62,387,0,0
+BRDA:62,387,1,0
+FN:70,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/<OnPostAsync>d__14::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ChangePasswordModel/<OnPostAsync>d__14::MoveNext()
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:97,0
+DA:98,0
+BRDA:72,64,0,0
+BRDA:72,64,1,0
+BRDA:78,239,0,0
+BRDA:78,239,1,0
+BRDA:84,491,0,0
+BRDA:86,592,1,0
+BRDA:86,592,0,0
+BRDA:84,491,1,0
+LF:46
+LH:0
+BRF:12
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.cs
+FN:27,GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::get_Input()
+DA:28,0
+FN:36,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::get_RequirePassword()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::get_RequirePassword()
+DA:37,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+FN:33,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/InputModel::get_Password()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/InputModel::get_Password()
+DA:34,0
+FN:39,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/<OnGet>d__13::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/<OnGet>d__13::MoveNext()
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:47,0
+DA:48,0
+DA:49,0
+BRDA:42,180,0,0
+BRDA:42,180,1,0
+FN:51,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/<OnPostAsync>d__14::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel/<OnPostAsync>d__14::MoveNext()
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:76,0
+DA:78,0
+DA:80,0
+DA:81,0
+BRDA:54,221,0,0
+BRDA:54,221,1,0
+BRDA:60,436,0,0
+BRDA:62,591,0,0
+BRDA:62,591,1,0
+BRDA:60,436,1,0
+BRDA:71,935,0,0
+BRDA:71,935,1,0
+LF:42
+LH:0
+BRF:10
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.cs
+FN:25,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel::get_StatusMessage()
+DA:26,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:28,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel/<OnGet>d__7::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel/<OnGet>d__7::MoveNext()
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:41,0
+DA:42,0
+BRDA:31,180,0,0
+BRDA:31,180,1,0
+BRDA:36,375,0,0
+BRDA:36,375,1,0
+FN:44,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel/<OnPostAsync>d__8::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.Disable2faModel/<OnPostAsync>d__8::MoveNext()
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+BRDA:47,180,0,0
+BRDA:47,180,1,0
+BRDA:53,400,0,0
+BRDA:53,400,1,0
+LF:31
+LH:0
+BRF:8
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.cs
+FN:18,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+FN:39,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel/<>c::<OnPostAsync>b__3_0(System.Reflection.PropertyInfo)
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel/<>c::<OnPostAsync>b__3_0(System.Reflection.PropertyInfo)
+DA:40,0
+FN:27,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel/<OnPostAsync>d__3::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel/<OnPostAsync>d__3::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:35,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+BRDA:30,180,0,0
+BRDA:30,180,1,0
+BRDA:41,486,1,0
+BRDA:43,441,0,0
+BRDA:43,441,1,0
+BRDA:43,453,0,0
+BRDA:43,453,1,0
+BRDA:41,486,0,0
+BRDA:47,762,1,0
+BRDA:47,762,0,0
+LF:28
+LH:0
+BRF:10
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Email.cshtml.cs
+FN:31,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Username()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Username()
+DA:32,0
+FN:33,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Email()
+DA:34,0
+FN:35,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_IsEmailConfirmed()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_IsEmailConfirmed()
+DA:36,0
+FN:38,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_StatusMessage()
+DA:39,0
+FN:41,GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::get_Input()
+DA:42,0
+FN:21,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+FN:48,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/InputModel::get_NewEmail()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/InputModel::get_NewEmail()
+DA:49,0
+FN:52,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<LoadAsync>d__25::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<LoadAsync>d__25::MoveNext()
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:62,0
+DA:63,0
+FN:65,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnGetAsync>d__26::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnGetAsync>d__26::MoveNext()
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:73,0
+DA:74,0
+DA:75,0
+BRDA:68,180,0,0
+BRDA:68,180,1,0
+FN:77,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnPostChangeEmailAsync>d__27::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnPostChangeEmailAsync>d__27::MoveNext()
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:107,0
+DA:108,0
+DA:111,0
+DA:112,0
+DA:113,0
+BRDA:80,221,0,0
+BRDA:80,221,1,0
+BRDA:85,306,0,0
+BRDA:85,306,1,0
+BRDA:92,609,0,0
+BRDA:92,609,1,0
+FN:115,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnPostSendVerificationEmailAsync>d__28::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EmailModel/<OnPostSendVerificationEmailAsync>d__28::MoveNext()
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:143,0
+DA:144,0
+DA:145,0
+BRDA:118,221,0,0
+BRDA:118,221,1,0
+BRDA:123,306,0,0
+BRDA:123,306,1,0
+LF:86
+LH:0
+BRF:12
+BRH:0
+FNF:11
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.cs
+FN:33,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_SharedKey()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_SharedKey()
+DA:34,0
+FN:35,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_AuthenticatorUri()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_AuthenticatorUri()
+DA:36,0
+FN:38,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_RecoveryCodes()
+FNDA:0,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_RecoveryCodes()
+DA:39,0
+FN:41,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_StatusMessage()
+DA:42,0
+FN:44,GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::get_Input()
+DA:45,0
+FN:130,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::FormatKey(System.String)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::FormatKey(System.String)
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:144,0
+DA:145,0
+BRDA:134,55,1,0
+BRDA:134,55,0,0
+BRDA:139,68,0,0
+BRDA:139,68,1,0
+FN:147,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::GenerateQrCodeUri(System.String,System.String)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::GenerateQrCodeUri(System.String,System.String)
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+FN:23,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel>,System.Text.Encodings.Web.UrlEncoder)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel>,System.Text.Encodings.Web.UrlEncoder)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+FN:52,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/InputModel::get_Code()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/InputModel::get_Code()
+DA:53,0
+FN:114,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<LoadSharedKeyAndQrCodeUriAsync>d__28::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<LoadSharedKeyAndQrCodeUriAsync>d__28::MoveNext()
+DA:115,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:124,0
+DA:126,0
+DA:127,0
+DA:128,0
+BRDA:118,198,0,0
+BRDA:118,198,1,0
+FN:56,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<OnGetAsync>d__26::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<OnGetAsync>d__26::MoveNext()
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:64,0
+DA:66,0
+DA:67,0
+BRDA:59,180,0,0
+BRDA:59,180,1,0
+FN:69,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<OnPostAsync>d__27::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel/<OnPostAsync>d__27::MoveNext()
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:84,0
+DA:86,0
+DA:87,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:100,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:109,0
+DA:110,0
+DA:112,0
+BRDA:72,239,0,0
+BRDA:72,239,1,0
+BRDA:77,324,0,0
+BRDA:77,324,1,0
+BRDA:89,686,0,0
+BRDA:89,686,1,0
+BRDA:102,1288,0,0
+BRDA:102,1288,1,0
+LF:84
+LH:0
+BRF:16
+BRH:0
+FNF:12
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.cs
+FN:24,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Identity.UserLoginInfo> GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_CurrentLogins()
+FNDA:0,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Identity.UserLoginInfo> GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_CurrentLogins()
+DA:25,0
+FN:26,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_OtherLogins()
+FNDA:0,System.Collections.Generic.IList`1<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_OtherLogins()
+DA:27,0
+FN:28,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_ShowRemoveButton()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_ShowRemoveButton()
+DA:29,0
+FN:31,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::get_StatusMessage()
+DA:32,0
+FN:43,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::<OnGetAsync>b__19_0(Microsoft.AspNetCore.Authentication.AuthenticationScheme)
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::<OnGetAsync>b__19_0(Microsoft.AspNetCore.Authentication.AuthenticationScheme)
+DA:44,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:34,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnGetAsync>d__19::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnGetAsync>d__19::MoveNext()
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+BRDA:37,194,0,0
+BRDA:37,194,1,0
+BRDA:46,547,0,0
+BRDA:46,547,1,0
+FN:81,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnGetLinkLoginCallbackAsync>d__22::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnGetLinkLoginCallbackAsync>d__22::MoveNext()
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:107,0
+BRDA:84,203,0,0
+BRDA:84,203,1,0
+BRDA:90,385,0,0
+BRDA:90,385,1,0
+BRDA:96,583,0,0
+BRDA:96,583,1,0
+FN:70,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnPostLinkLoginAsync>d__21::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnPostLinkLoginAsync>d__21::MoveNext()
+DA:71,0
+DA:73,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+FN:50,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnPostRemoveLoginAsync>d__20::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel/<OnPostRemoveLoginAsync>d__20::MoveNext()
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+BRDA:53,194,0,0
+BRDA:53,194,1,0
+BRDA:59,388,0,0
+BRDA:59,388,1,0
+LF:61
+LH:0
+BRF:14
+BRH:0
+FNF:10
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.cs
+FN:25,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::get_RecoveryCodes()
+FNDA:0,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::get_RecoveryCodes()
+DA:26,0
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::get_StatusMessage()
+DA:29,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:31,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel/<OnGetAsync>d__11::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel/<OnGetAsync>d__11::MoveNext()
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:46,0
+DA:47,0
+BRDA:34,194,0,0
+BRDA:34,194,1,0
+BRDA:40,401,0,0
+BRDA:40,401,1,0
+FN:49,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel/<OnPostAsync>d__12::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel/<OnPostAsync>d__12::MoveNext()
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+BRDA:52,203,0,0
+BRDA:52,203,1,0
+BRDA:59,549,0,0
+BRDA:59,549,1,0
+LF:37
+LH:0
+BRF:8
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\Index.cshtml.cs
+FN:25,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_Username()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_Username()
+DA:26,0
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_StatusMessage()
+DA:29,0
+FN:31,GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::get_Input()
+DA:32,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:37,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/InputModel::get_PhoneNumber()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/InputModel::get_PhoneNumber()
+DA:38,0
+FN:41,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<LoadAsync>d__16::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<LoadAsync>d__16::MoveNext()
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+FN:54,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<OnGetAsync>d__17::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<OnGetAsync>d__17::MoveNext()
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:62,0
+DA:63,0
+DA:64,0
+BRDA:57,180,0,0
+BRDA:57,180,1,0
+FN:66,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<OnPostAsync>d__18::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.IndexModel/<OnPostAsync>d__18::MoveNext()
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+BRDA:69,212,0,0
+BRDA:69,212,1,0
+BRDA:74,297,0,0
+BRDA:74,297,1,0
+BRDA:81,600,0,0
+BRDA:84,779,0,0
+BRDA:84,779,1,0
+BRDA:81,600,1,0
+LF:50
+LH:0
+BRF:10
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ManageNavPages.cs
+FN:10,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_Index()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_Index()
+DA:11,0
+FN:12,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_Email()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_Email()
+DA:13,0
+FN:14,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_ChangePassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_ChangePassword()
+DA:15,0
+FN:16,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_DownloadPersonalData()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_DownloadPersonalData()
+DA:17,0
+FN:18,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_DeletePersonalData()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_DeletePersonalData()
+DA:19,0
+FN:20,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_ExternalLogins()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_ExternalLogins()
+DA:21,0
+FN:22,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_PersonalData()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_PersonalData()
+DA:23,0
+FN:24,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_TwoFactorAuthentication()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::get_TwoFactorAuthentication()
+DA:25,0
+FN:26,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::IndexNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::IndexNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:27,0
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::EmailNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::EmailNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:29,0
+FN:30,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::ChangePasswordNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::ChangePasswordNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:31,0
+FN:32,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::DownloadPersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::DownloadPersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:33,0
+FN:34,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::DeletePersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::DeletePersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:35,0
+FN:36,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::ExternalLoginsNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::ExternalLoginsNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:37,0
+FN:38,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::PersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::PersonalDataNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:39,0
+FN:40,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::TwoFactorAuthenticationNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::TwoFactorAuthenticationNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+DA:41,0
+FN:43,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::PageNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String)
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ManageNavPages::PageNavClass(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.String)
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+BRDA:45,23,0,0
+BRDA:45,23,1,0
+BRDA:47,51,0,0
+BRDA:47,51,1,0
+LF:21
+LH:0
+BRF:4
+BRH:0
+FNF:17
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.cs
+FN:13,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel>)
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+FN:22,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel/<OnGet>d__3::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.PersonalDataModel/<OnGet>d__3::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:30,0
+DA:31,0
+BRDA:25,169,0,0
+BRDA:25,169,1,0
+LF:14
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.cs
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel::get_StatusMessage()
+DA:29,0
+FN:17,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel>)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+FN:31,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel/<OnGet>d__8::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel/<OnGet>d__8::MoveNext()
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:39,0
+DA:40,0
+BRDA:34,169,0,0
+BRDA:34,169,1,0
+FN:42,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel/<OnPostAsync>d__9::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel/<OnPostAsync>d__9::MoveNext()
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+BRDA:45,203,0,0
+BRDA:45,203,1,0
+LF:29
+LH:0
+BRF:4
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.cs
+FN:25,GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::get_Input()
+FNDA:0,GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::get_Input()
+DA:26,0
+FN:28,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::get_StatusMessage()
+DA:29,0
+FN:16,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:36,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel::get_NewPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel::get_NewPassword()
+DA:37,0
+FN:41,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel::get_ConfirmPassword()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/InputModel::get_ConfirmPassword()
+DA:42,0
+FN:45,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/<OnGetAsync>d__12::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/<OnGetAsync>d__12::MoveNext()
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:53,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:60,0
+DA:61,0
+BRDA:48,180,0,0
+BRDA:48,180,1,0
+BRDA:55,384,0,0
+BRDA:55,384,1,0
+FN:63,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/<OnPostAsync>d__13::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.SetPasswordModel/<OnPostAsync>d__13::MoveNext()
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:86,0
+DA:87,0
+DA:89,0
+DA:90,0
+BRDA:65,64,0,0
+BRDA:65,64,1,0
+BRDA:71,239,0,0
+BRDA:71,239,1,0
+BRDA:77,475,0,0
+BRDA:79,576,1,0
+BRDA:79,576,0,0
+BRDA:77,475,1,0
+LF:42
+LH:0
+BRF:12
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.cs
+FN:14,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::get_RecoveryCodes()
+FNDA:0,System.String[] GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::get_RecoveryCodes()
+DA:15,0
+FN:17,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::get_StatusMessage()
+DA:18,0
+FN:20,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::OnGet()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel::OnGet()
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:27,0
+DA:28,0
+BRDA:22,7,0,0
+BRDA:22,7,1,0
+BRDA:22,24,0,0
+BRDA:22,24,1,0
+LF:8
+LH:0
+BRF:4
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.cs
+FN:29,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_HasAuthenticator()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_HasAuthenticator()
+DA:30,0
+FN:31,System.Int32 GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_RecoveryCodesLeft()
+FNDA:0,System.Int32 GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_RecoveryCodesLeft()
+DA:32,0
+FN:34,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_Is2faEnabled()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_Is2faEnabled()
+DA:35,0
+FN:36,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_IsMachineRemembered()
+FNDA:0,System.Boolean GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_IsMachineRemembered()
+DA:37,0
+FN:39,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_StatusMessage()
+FNDA:0,System.String GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::get_StatusMessage()
+DA:40,0
+FN:19,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.AspNetCore.Identity.SignInManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,Microsoft.Extensions.Logging.ILogger`1<GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel>)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+FN:42,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel/<OnGet>d__25::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel/<OnGet>d__25::MoveNext()
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:55,0
+DA:56,0
+BRDA:45,212,0,0
+BRDA:45,212,1,0
+FN:58,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel/<OnPost>d__26::MoveNext()
+FNDA:0,System.Void GeoAuth.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel/<OnPost>d__26::MoveNext()
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+BRDA:61,180,0,0
+BRDA:61,180,1,0
+LF:34
+LH:0
+BRF:4
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\Data\GeoAuthIdentityDbContext.cs
+FN:18,System.Void GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:19,0
+DA:20,0
+DA:24,0
+FN:13,System.Void GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext>)
+FNDA:0,System.Void GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Areas.Identity.Data.GeoAuthIdentityDbContext>)
+DA:14,0
+DA:15,0
+DA:16,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record

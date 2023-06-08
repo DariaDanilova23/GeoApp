@@ -19,10 +19,10 @@
             <td>@user.Id</td>
             <td>@user.UserName</td>
             <td>@user.PhoneNumber</td>
-            <td><a asp-action="ManageUserRoles" asp-route-userId="@user.Id">Изменить</a></td>
+            <td><a asp-action="ManageUserRoles" asp-route-userId="@user.Id" class="changeUser-btn">Изменить</a></td>
             <td>
                 <form asp-action="DeleteUser" asp-route-userId2="@user.Id" method="post">
-                    <button type="submit">Удалить</button>
+                    <button class="deleteUser-btn" type="submit">Удалить</button>
                 </form>
             </td>
         </tr>

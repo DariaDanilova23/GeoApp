@@ -115,8 +115,7 @@ coorButton.addEventListener("click", () => {
       overlay.setPosition(coordinate);
     }
   });
-}
-)
+});
 map.addControl(coorControl);
 //-----------------------
 var zoom = new ol.control.Zoom({ zoomInLabel: '+', zoomOutLabel: '-' });
@@ -198,8 +197,6 @@ const personalLayerGroup = new ol.layer.Group({
 //---------------------------
 var userId = document.getElementById("userInfoID").value; //Получение id пользователя
 if (userId != " ") {
-
-  let downLayer = [];
   $.ajax({
     type: 'GET',
     url: 'http://localhost:8080/geoserver/' + userId + '/wfs?request=getCapabilities',
@@ -212,7 +209,6 @@ if (userId != " ") {
           var titleName = elementRespond.find('Title').text(); //Получение названия слоя
           var newlayer = new ol.layer.Vector({
             source: new ol.source.Vector({
-              //geoportal%3A
               url: 'http://localhost:8080/geoserver/' + userId + '/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=' + value + '&maxFeatures=50&outputFormat=application/json',
               format: new ol.format.GeoJSON(),
               attributions: '@geoserver'
@@ -223,15 +219,16 @@ if (userId != " ") {
           //downLayer.push(newlayer);
         })
       })
-      map.addLayer(personalLayerGroup);
-      listLayer();
+      if (personalLayerGroup.getLayers().getLength() > 0) {
+        map.addLayer(personalLayerGroup);
+      };
+
+      deleteLayer();
     }
   })
 }
 
-
-
-function listLayer() {
+function deleteLayer() {
   layerSwitcher.renderPanel();
   var delButton = document.createElement('button');
   var img = document.createElement('img');
@@ -252,31 +249,37 @@ function listLayer() {
   map.addControl(delControl);
 
   delButton.addEventListener("click", () => {
-    delButton.classList.toggle("cliked");
+    //delButton.classList.toggle("cliked");
     delFlag = !delFlag;
-    var personalLayers = personalLayerGroup.getLayers().array_;
-    personalLayers.forEach(layer => {
-      if (layer.values_.visible == true) {
-        $.ajax({
-          type: "DELETE",
-          headers: {
-            "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
-          },
-          url: 'http://localhost:8080/geoserver/rest/workspaces/' + userId + '/datastores/' + layer.values_.title + '/?recurse=true',
-          success: function (result) {
-            console.log(result);
-            console.log("успех");
-            personalLayerGroup.getLayers().pop(layer);
-          },
-          error: function (error) {
-            console.log(error);
-            console.log("error");
-          }
-        })
+    if (confirm("Вы уверены что хотите удалить выбранные слои?")) {
+      var personalLayers = personalLayerGroup.getLayers().array_;
+      personalLayers.forEach(layer => {
+        if (layer.values_.visible == true) {
+          $.ajax({
+            type: "DELETE",
+            headers: {
+              "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
+            },
+            url: 'http://localhost:8080/geoserver/rest/workspaces/' + userId + '/datastores/' + layer.values_.title + '/?recurse=true',
+            success: function (result) {
+              console.log(result);
+              console.log("успех");
+              // personalLayerGroup.getLayers().pop(layer);
+              if (personalLayerGroup.getLayers().getLength() == 0) {
+                map.removeLayer(personalLayerGroup);
+              };
+              layerSwitcher.renderPanel();
+            },
+            error: function (error) {
+              console.log(error);
+              console.log("error");
+            }
+          })
 
-      }
-    });
-    layerSwitcher.renderPanel();
+        }
+      });
+
+    }
   });
 }
 
@@ -440,7 +443,434 @@ const vector = new ol.layer.Vector({
   },
 });
 map.addLayer(vector);
+//-------------Фильтр-------------------------------------
+var attQueryDiv = document.createElement("div");
+attQueryDiv.setAttribute('class', 'attQueryDiv');
+attQueryDiv.setAttribute('id', 'attQueryDiv');
+mainContainer[0].appendChild(attQueryDiv);
 
+
+var headerDiv = document.createElement("div");
+headerDiv.setAttribute('class', 'headerDiv');
+headerDiv.setAttribute('id', 'headerDiv');
+attQueryDiv.appendChild(headerDiv);
+
+var headerLable = document.createElement("lable");
+headerLable.innerHTML = "Запрос атрибутов";
+headerDiv.appendChild(headerLable);
+//---------------------------
+var selectLayerLable = document.createElement("lable");
+selectLayerLable.innerHTML = "Выбрать слой";
+attQueryDiv.appendChild(selectLayerLable);
+
+var selectLayer = document.createElement("select");
+selectLayer.setAttribute('name', 'selectLayer');
+selectLayer.setAttribute('id', 'selectLayer');
+attQueryDiv.appendChild(selectLayer);
+/*
+//--------------------------
+var selectAttributeLable = document.createElement("lable");
+selectAttributeLable.innerHTML = "Выбрать атрибут";
+attQueryDiv.appendChild(selectAttributeLable);
+
+var selectAttribute = document.createElement("select");
+selectAttribute.setAttribute('name', 'selectAttribute');
+selectAttribute.setAttribute('id', 'selectAttribute');
+attQueryDiv.appendChild(selectAttribute);
+//---------------------------------
+var selectOperatorLable = document.createElement("lable");
+selectOperatorLable.innerHTML = "Оператор";
+attQueryDiv.appendChild(selectOperatorLable);
+
+var selectOperator = document.createElement("select");
+selectOperator.setAttribute('name', 'selectOperator');
+selectOperator.setAttribute('id', 'selectOperator');
+attQueryDiv.appendChild(selectOperator);
+//--------------------------------------
+var enterLable = document.createElement("lable");
+enterLable.innerHTML = "Значение";
+attQueryDiv.appendChild(enterLable);
+
+var enterValue = document.createElement("input");
+enterValue.setAttribute('type', 'text');
+enterValue.setAttribute('name', 'enterValue');
+enterValue.setAttribute('id', 'enterValue');
+attQueryDiv.appendChild(enterValue);*/
+
+var attQryRun = document.createElement("button");
+attQryRun.setAttribute('type', 'button');
+attQryRun.setAttribute('id', 'attQryRun');
+attQryRun.setAttribute('class', 'attQryRun');
+attQryRun.setAttribute('onclick', 'attributeQuery()');
+attQryRun.innerHTML = "Найти";
+attQueryDiv.appendChild(attQryRun);
+
+//-----------------
+var selectorButton = document.createElement('button');
+var img = document.createElement('img');
+img.className = "selector"
+selectorButton.appendChild(img);
+selectorButton.className = "myButton";
+selectorButton.id = "selectorButton";
+
+var selectorElement = document.createElement('div');
+selectorElement.className = "containerButtonDiv";
+selectorElement.id = "selectorButtonDiv";
+selectorElement.appendChild(selectorButton);
+
+var selectorControl = new ol.control.Control({
+  element: selectorElement
+});
+
+//внимание
+var geojson;
+var featureOverlay;
+
+var selectorFlag = false;
+
+selectorButton.addEventListener("click", () => {
+  selectorButton.classList.toggle("cliked");
+  selectorFlag = !selectorFlag;
+  if (selectorFlag) {
+    if (geojson) {
+      geojson.getSource().clear();
+      map.removeLayer(geojson);
+    }
+    if (featureOverlay) {
+      featureOverlay.getSource().clear();
+      map.removeLayer(featureOverlay);
+    }
+    attQueryDiv.style.display = 'block';
+    bolIdentify = false;
+    addMapLayerList();
+  }
+  else {
+    attQueryDiv.style.display = 'none';
+    document.getElementById("attListDiv").style.display = 'none';
+
+    if (geojson) {
+      geojson.getSource().clear();
+      map.removeLayer(geojson);
+    }
+    if (featureOverlay) {
+      featureOverlay.getSource().clear();
+      map.removeLayer(featureOverlay);
+    }
+  }
+})
+map.addControl(selectorControl);
+
+function addMapLayerList() {
+  $(document).ready(function () {
+    $.ajax({
+      type: "GET",
+      url: "http://localhost:8080/geoserver/geoportal/wfs?request=getCapabilities",
+      dataType: "xml",
+      success: function (xml) {
+        var select = $('#selectLayer');
+        select.append("<option class='ddindent' value=''></option>");
+        $(xml).find('FeatureType').each(function () {
+          var elementRespond = $(this);
+          $(this).find('Name').each(function () {
+            var title = elementRespond.find('Title').text();
+            var value = $(this).text();
+            //console.log(value);
+            select.append("<option class='ddindent' value='" + value + "'>" + title + "</option>");
+          })
+        })
+      }
+    });
+    /*
+    $.ajax({
+      type: "GET",
+      url: "http://localhost:8080/geoserver/" + userId + "/wfs?request=getCapabilities",
+      dataType: "xml",
+      success: function (xml) {
+        var select = $('#selectLayer');
+        $(xml).find('FeatureType').each(function () {
+          var elementRespond = $(this);
+          $(this).find('Name').each(function () {
+            var title = elementRespond.find('Title').text();
+            var value = $(this).text();
+            //console.log(value);
+            select.append("<option class='ddindent' value='" + value + "'>Личный: " + title + "</option>");
+          })
+        })
+      }
+    });*/
+  });
+}
+// Фильрация после выбора слоя
+$(function () {
+  document.getElementById("selectLayer").onchange = function () {
+    var select = document.getElementById("selectAttribute");
+    while (select.options.length > 0) {
+      select.remove(0);
+    }
+    var value_layer = $(this).val();
+    $(document).ready(function () {
+      $.ajax({
+        type: "GET",
+        url: "http://localhost:8080/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=1.1.0&typeName=" + value_layer,
+        dataType: "xml",
+        success: function (xml) {
+          var select = $('#selectAttribute');
+          var tile = $(xml).find('xsd\\:complexType').attr('name');
+          select.append("<option class='ddindent' value=''></option>");
+          $(xml).find('xsd\\:sequence').each(function () {
+
+            $(this).find('xsd\\:element').each(function () {
+              console.log($(this));
+              var value = $(this).attr('name');
+              var type = $(this).attr('type');
+
+              //  console.log($(this));
+
+              if (value != 'geom' && value != 'the_geom') {
+                select.append("<option class='ddindent' value='" + type + "'>" + value + "</option>");
+              }
+              //---------убрать-------
+              //   select.append("<option class='ddindent' value='xsd:double'> id </option>");
+            });
+
+          });
+        }
+      });
+    })
+  };
+  /*
+    document.getElementById("selectAttribute").onchange = function () {
+      var operator = document.getElementById("selectOperator");
+      while (operator.options.length > 0) {
+        operator.remove(0);
+      }
+  
+      var value_type = $(this).val();
+      var value_attribute = $('#selectAttribute option:selected').text();
+      operator.options[0] = new Option('Select operator', "");
+  
+      if (value_type == 'xsd:short' || value_type == 'xsd:int' || value_type == 'xsd:double') {
+        var operator1 = document.getElementById("selectOperator");
+        operator1.options[1] = new Option('Больше', '>');
+        operator1.options[2] = new Option('Меньше', '<');
+        operator1.options[3] = new Option('Равен', '=');
+      }
+      else if (value_type == 'xsd:string') {
+        var operator1 = document.getElementById("selectOperator");
+        operator1.options[1] = new Option('Как', 'Like');
+        operator1.options[2] = new Option('Равен', '=');
+      }
+    }
+  */
+
+
+  document.getElementById('attQryRun').onclick = function () {
+    //map.set("isLoading", 'YES');
+
+    if (featureOverlay) {
+      featureOverlay.getSource().clear();
+      map.removeLayer(featureOverlay);
+    }
+
+    var layer = document.getElementById("selectLayer");
+    /*var attribute = document.getElementById("selectAttribute");
+    var operator = document.getElementById("selectOperator");
+    var txt = document.getElementById("enterValue");*/
+
+    if (layer.options.selectedIndex == 0) {
+      alert("Выберите слой");
+    }
+    /*else if (attribute.options.selectedIndex == -1) {
+      alert("Выберите атрибут");
+    } else if (operator.options.selectedIndex <= 0) {
+      alert("Выберите оператор");
+    } else if (txt.value.length <= 0) {
+      alert("Введите значение");
+    } */
+    else {
+      var value_layer = layer.options[layer.selectedIndex].value;
+      /* var value_attribute=attribute.options[attribute.selectedIndex].text;
+       var value_operator=operator.options[operator.selectedIndex].value;
+       var value_txt=txt.value;
+       if(value_operator == 'Like'){
+         value_txt="%25"+value_txt+"%25";
+       }
+       else{
+         value_txt=value_txt;
+       }*/
+      var url = "http://localhost:8080/geoserver/geoportal/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=" + value_layer + "&outputFormat=application/json";
+      newaddGeoJsonToMap(url);
+      newpopulateQueryTable(url);
+      setTimeout(function () { newaddRowHandlers(url); }, 3000);
+    // map.set('isLoading', 'NO');
+    }
+  }
+});
+
+function newaddGeoJsonToMap(url) {
+  if (geojson) {
+    geojson.getSource().clear();
+    map.removeLayer(geojson);
+  }
+
+  var style = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: '#FFFF00',
+      width: 3
+    }),
+    image: new ol.style.Circle({
+      radius: 7,
+      fill: new ol.style.Fill({
+        color: '#FFFF00'
+      })
+    })
+  });
+  geojson = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      url: url,
+      format: new ol.format.GeoJSON()
+    }),
+    style: style,
+  });
+  geojson.getSource().on('addfeature', function () {
+    map.getView().fit(
+      geojson.getSource().getExtent(),
+      { duration: 1590, size: map.getSize(), maxZoom: 21 }
+    );
+  });
+  map.addLayer(geojson);
+};
+
+function newpopulateQueryTable(url) {
+  if (typeof attributePanel !== 'undefined') {
+    if (attributePanel.parentElement !== null) {
+      attributePanel.close();
+    }
+  }
+
+  $.getJSON(url, function (data) {
+    var col = [];
+    col.push('id');
+    for (var i = 0; i < data.features.length; i++) {
+      for (var key in data.features[i].properties) {
+        if (col.indexOf(key) === -1) {
+          col.push(key);
+        }
+      }
+    }
+
+    var table = document.createElement("table");
+    table.setAttribute("class", "table table-bordered table-hover table-condensed");
+    table.setAttribute("id", "attQryTable");
+
+    var tr = table.insertRow(-1);
+
+    for (var i = 0; i < col.length; i++) {
+      var th = document.createElement("th");
+      th.innerHTML = col[i];
+      tr.appendChild(th);
+    }
+
+    for (var i = 0; i < data.features.length; i++) {
+      tr = table.insertRow(-1);
+      for (var j = 0; j < col.length; j++) {
+        var tabCell = tr.insertCell(-1);
+        if (j == 0) { tabCell.innerHTML = data.features[i]['id']; }
+        else {
+          tabCell.innerHTML = data.features[i].properties[col[j]];
+        }
+      }
+    }
+    var tabDiv = document.getElementById("attListDiv");
+
+    var delTab = document.getElementById("attQryTable");
+    if (delTab) {
+      tabDiv.removeChild(delTab);
+    }
+
+    tabDiv.appendChild(table);
+    document.getElementById("attListDiv").style.display = "block";
+    document.getElementById("attListDiv").scrollIntoView();
+  });
+
+  var highlightStyle = new ol.style.Style({
+    fill: new ol.style.Fill({
+      color: 'rgba(255,0,255,0,0.3)'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#FF00FF',
+      width: 3,
+    }),
+    image: new ol.style.Circle({
+      radius: 10,
+      fill: new ol.style.Fill({
+        color: "#FF00FF"
+      })
+    })
+  });
+
+  //var
+  featureOverlay = new ol.layer.Vector({
+    source: new ol.source.Vector(),
+    map: map,
+    style: highlightStyle
+  })
+};
+
+function newaddRowHandlers() {
+  var table = document.getElementById('attQryTable');
+  var rows = document.getElementById('attQryTable').rows;
+  var heads = document.getElementsByTagName('th');
+  var col_no;
+  for (var i = 0; i < heads.length; i++) {
+    var head = heads[i];
+    if (head.innerHTML == 'id') {
+      col_no = i + 1;
+    }
+  }
+
+  for (i = 0; i < rows.length; i++) {
+    rows[i].onclick = function () {
+      return function () {
+        featureOverlay.getSource().clear();
+
+        $(function () {
+          $("attQryTable td").each(function () {
+            $(this).parent("tr").css("background-color", "white");
+          });
+        });
+
+        var cell = this.cells[col_no - 1];
+        var id = cell.innerHTML;
+        $(document).ready(function () {
+          $("attQryTable td:nth-child(" + col_no + ")").each(function () {
+            if ($(this).text() == id) {
+              $(this).parent("tr").css("background-color", "#d1d8e2");
+            }
+          })
+        });
+
+        var features = geojson.getSource().getFeatures();
+
+        for (i = 0; i < features.length; i++) {
+          if (features[i].getId() == id) {
+            featureOverlay.getSource().addFeature(features[i]);
+
+            featureOverlay.getSource().on('addfeature', function () {
+              map.getView().fit(
+                featureOverlay.getSource().getExtent(),
+                { duration: 1500, size: map.getSize(), maxZoom: 24 }
+              );
+            });
+          }
+        }
+      };
+    }
+      (rows[i])
+  }
+}
+
+//------------------------
 /**
  * Currently drawn feature.
  * @type {ol.Feature}

@@ -10,15 +10,13 @@ namespace GeoAuth.Controllers;
 //[Authorize(Roles="Admin")]
 public class AdminController : Controller
 {
-    private readonly ILogger<AdminController> _logger;
+ 
     private readonly ApplicationDbContext _context;
     private readonly UserManager<IdentityUser> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
 
-
-    public AdminController(ILogger<AdminController> logger, UserManager<IdentityUser> usermanager, ApplicationDbContext context)
+    public AdminController(UserManager<IdentityUser> usermanager, ApplicationDbContext context)
     {
-        _logger = logger;
+
          _userManager = usermanager;
         _context = context;
     }

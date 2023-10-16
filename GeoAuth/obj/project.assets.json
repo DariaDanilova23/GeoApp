@@ -46,6 +46,20 @@
           }
         }
       },
+      "DbfDataReader/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.Common": "4.3.0",
+          "System.Memory": "4.5.4",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DbfDataReader.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DbfDataReader.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1348,6 +1362,38 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NetTopologySuite/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NetTopologySuite.Features/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "[2.0.0, 3.0.0-A)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -1684,6 +1730,27 @@
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.2/System.Data.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.2/System.Data.Common.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2293,6 +2360,18 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "System.Text.RegularExpressions/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcoreapp1.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Text.RegularExpressions.dll": {}
+        }
+      },
       "System.Threading/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2391,6 +2470,19 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "DbfDataReader/0.8.0": {
+      "sha512": "E/1lN/a7VMjk0tXjZYO0xmUmvzhkTnT4oogbhMDy7gFhZc30yqYnxGZcYrpmfpoAxac81pY02xN1dbobKV0GRA==",
+      "type": "package",
+      "path": "dbfdatareader/0.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dbfdatareader.0.8.0.nupkg.sha512",
+        "dbfdatareader.nuspec",
+        "lib/net5.0/DbfDataReader.dll",
+        "lib/netstandard2.1/DbfDataReader.dll"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4394,6 +4486,34 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "NetTopologySuite/2.3.0": {
+      "sha512": "Y+YOvA5um+75Wm9NKE+EhUNCvLYWiPhPW5Q5eBNi6kVNbxsX60/nvIJtve5iRcbrAl38W9h2w2yBjU81cjDO5g==",
+      "type": "package",
+      "path": "nettopologysuite/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.3.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
+    "NetTopologySuite.Features/2.1.0": {
+      "sha512": "Iq+Ie9WZJj8Pyu3asHZ/UwZLim786QzWC0DmLEzFK2u3BeLHDK7iWfsYBLDb/RCBUql8VBmW6LMlsJ+LKUHduA==",
+      "type": "package",
+      "path": "nettopologysuite.features/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.Features.dll",
+        "lib/netstandard2.0/NetTopologySuite.Features.xml",
+        "nettopologysuite.features.2.1.0.nupkg.sha512",
+        "nettopologysuite.features.nuspec"
+      ]
+    },
     "Newtonsoft.Json/11.0.2": {
       "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
@@ -4794,6 +4914,57 @@
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Data.Common/4.3.0": {
+      "sha512": "lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
+      "type": "package",
+      "path": "system.data.common/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net451/System.Data.Common.dll",
+        "lib/netstandard1.2/System.Data.Common.dll",
+        "lib/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net451/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.xml",
+        "ref/netstandard1.2/de/System.Data.Common.xml",
+        "ref/netstandard1.2/es/System.Data.Common.xml",
+        "ref/netstandard1.2/fr/System.Data.Common.xml",
+        "ref/netstandard1.2/it/System.Data.Common.xml",
+        "ref/netstandard1.2/ja/System.Data.Common.xml",
+        "ref/netstandard1.2/ko/System.Data.Common.xml",
+        "ref/netstandard1.2/ru/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/de/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/es/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/fr/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/it/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ja/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ko/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ru/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hans/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hant/System.Data.Common.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.data.common.4.3.0.nupkg.sha512",
+        "system.data.common.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
@@ -6658,6 +6829,90 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Text.RegularExpressions/4.3.0": {
+      "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
+      "type": "package",
+      "path": "system.text.regularexpressions/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net463/System.Text.RegularExpressions.dll",
+        "lib/netcore50/System.Text.RegularExpressions.dll",
+        "lib/netstandard1.6/System.Text.RegularExpressions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net463/System.Text.RegularExpressions.dll",
+        "ref/netcore50/System.Text.RegularExpressions.dll",
+        "ref/netcore50/System.Text.RegularExpressions.xml",
+        "ref/netcore50/de/System.Text.RegularExpressions.xml",
+        "ref/netcore50/es/System.Text.RegularExpressions.xml",
+        "ref/netcore50/fr/System.Text.RegularExpressions.xml",
+        "ref/netcore50/it/System.Text.RegularExpressions.xml",
+        "ref/netcore50/ja/System.Text.RegularExpressions.xml",
+        "ref/netcore50/ko/System.Text.RegularExpressions.xml",
+        "ref/netcore50/ru/System.Text.RegularExpressions.xml",
+        "ref/netcore50/zh-hans/System.Text.RegularExpressions.xml",
+        "ref/netcore50/zh-hant/System.Text.RegularExpressions.xml",
+        "ref/netcoreapp1.1/System.Text.RegularExpressions.dll",
+        "ref/netstandard1.0/System.Text.RegularExpressions.dll",
+        "ref/netstandard1.0/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/de/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/es/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/fr/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/it/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/ja/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/ko/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/ru/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/zh-hans/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.0/zh-hant/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/System.Text.RegularExpressions.dll",
+        "ref/netstandard1.3/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/de/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/es/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/fr/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/it/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/ja/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/ko/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/ru/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/System.Text.RegularExpressions.dll",
+        "ref/netstandard1.6/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/de/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/es/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/fr/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/it/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/ja/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/ko/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/ru/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/zh-hans/System.Text.RegularExpressions.xml",
+        "ref/netstandard1.6/zh-hant/System.Text.RegularExpressions.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.text.regularexpressions.4.3.0.nupkg.sha512",
+        "system.text.regularexpressions.nuspec"
+      ]
+    },
     "System.Threading/4.3.0": {
       "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
       "type": "package",
@@ -6859,6 +7114,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DbfDataReader >= 0.8.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.10",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.10",
@@ -6867,6 +7123,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.0-preview.5.21321.1",
+      "NetTopologySuite >= 2.3.0",
+      "NetTopologySuite.Features >= 2.1.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.3"
     ]
   },
@@ -6907,6 +7165,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DbfDataReader": {
+            "target": "Package",
+            "version": "[0.8.0, )"
+          },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.10, )"
@@ -6940,6 +7202,14 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.0-preview.5.21321.1, )"
+          },
+          "NetTopologySuite": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
+          "NetTopologySuite.Features": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",

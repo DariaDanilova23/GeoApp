@@ -1177,30 +1177,32 @@ FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Admin\Index.cshtml
-FN:4,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__13::MoveNext()
-FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__13::MoveNext()
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__16::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Admin_Index/<ExecuteAsync>d__16::MoveNext()
 DA:5,0
-DA:16,0
 DA:17,0
-DA:19,0
+DA:18,0
 DA:20,0
 DA:21,0
 DA:22,0
-DA:24,0
-DA:29,0
-BRDA:16,1850,1,0
-BRDA:21,502,0,0
-BRDA:21,502,1,0
-BRDA:22,848,0,0
-BRDA:22,848,1,0
-BRDA:22,1265,0,0
-BRDA:22,1265,1,0
-BRDA:24,1646,0,0
-BRDA:24,1646,1,0
-BRDA:16,1850,0,0
+DA:23,0
+DA:25,0
+DA:30,0
+BRDA:5,422,0,0
+BRDA:5,422,1,0
+BRDA:17,2387,1,0
+BRDA:22,1036,0,0
+BRDA:22,1036,1,0
+BRDA:23,1385,0,0
+BRDA:23,1385,1,0
+BRDA:23,1802,0,0
+BRDA:23,1802,1,0
+BRDA:25,2183,0,0
+BRDA:25,2183,1,0
+BRDA:17,2387,0,0
 LF:9
 LH:0
-BRF:10
+BRF:12
 BRH:0
 FNF:1
 FNH:0
@@ -1274,28 +1276,30 @@ FNF:2
 FNH:0
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Home\Index.cshtml
-FN:2,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
-FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__10::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__10::MoveNext()
 DA:3,0
 DA:12,0
 DA:15,0
-BRDA:12,95,1,0
-BRDA:12,95,0,0
-BRDA:12,187,1,0
-BRDA:12,187,0,0
-BRDA:12,259,1,0
-BRDA:12,259,0,0
-BRDA:15,412,1,0
-BRDA:15,412,0,0
-BRDA:15,564,1,0
-BRDA:15,564,0,0
-BRDA:15,636,1,0
-BRDA:15,636,0,0
-BRDA:15,1050,0,0
-BRDA:15,1050,1,0
+BRDA:3,402,0,0
+BRDA:3,402,1,0
+BRDA:12,609,1,0
+BRDA:12,609,0,0
+BRDA:12,701,1,0
+BRDA:12,701,0,0
+BRDA:12,773,1,0
+BRDA:12,773,0,0
+BRDA:15,926,1,0
+BRDA:15,926,0,0
+BRDA:15,1078,1,0
+BRDA:15,1078,0,0
+BRDA:15,1150,1,0
+BRDA:15,1150,0,0
+BRDA:15,1569,0,0
+BRDA:15,1569,1,0
 LF:3
 LH:0
-BRF:14
+BRF:16
 BRH:0
 FNF:1
 FNH:0
@@ -1313,16 +1317,30 @@ FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shape\Index.cshtml
-FN:1,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__12::MoveNext()
-FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__12::MoveNext()
+FN:14,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<<ExecuteAsync>b__22_2>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<<ExecuteAsync>b__22_2>d::MoveNext()
+DA:15,0
+DA:20,0
+DA:21,0
+DA:23,0
+BRDA:15,48,0,0
+BRDA:15,48,1,0
+BRDA:21,159,0,0
+BRDA:21,159,1,0
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__22::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shape_Index/<ExecuteAsync>d__22::MoveNext()
 DA:2,0
-BRDA:2,572,0,0
-BRDA:2,572,1,0
-LF:1
+BRDA:2,420,0,0
+BRDA:2,420,1,0
+BRDA:2,1059,0,0
+BRDA:2,1059,1,0
+BRDA:2,1731,0,0
+BRDA:2,1731,1,0
+LF:5
 LH:0
-BRF:2
+BRF:10
 BRH:0
-FNF:1
+FNF:2
 FNH:0
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Views\Shared\Error.cshtml
@@ -1450,16 +1468,16 @@ FNH:0
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Data\ApplicationDbContext.cs
 FN:8,System.Void GeoAuth.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Data.ApplicationDbContext>)
-FNDA:0,System.Void GeoAuth.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Data.ApplicationDbContext>)
-DA:9,0
-DA:10,0
-DA:11,0
+FNDA:3,System.Void GeoAuth.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<GeoAuth.Data.ApplicationDbContext>)
+DA:9,3
+DA:10,3
+DA:11,3
 LF:3
-LH:0
+LH:3
 BRF:0
 BRH:0
 FNF:1
-FNH:0
+FNH:1
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Data\Migrations\00000000000000_CreateIdentitySchema.cs
 FN:8,System.Void GeoAuth.Data.Migrations.CreateIdentitySchema::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
@@ -2173,12 +2191,12 @@ BRDA:64,14,1,0
 BRDA:64,26,0,0
 BRDA:64,26,1,0
 FN:16,System.Void GeoAuth.Controllers.AdminController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,GeoAuth.Data.ApplicationDbContext)
-FNDA:0,System.Void GeoAuth.Controllers.AdminController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,GeoAuth.Data.ApplicationDbContext)
-DA:17,0
-DA:18,0
-DA:20,0
-DA:21,0
-DA:22,0
+FNDA:3,System.Void GeoAuth.Controllers.AdminController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<Microsoft.AspNetCore.Identity.IdentityUser>,GeoAuth.Data.ApplicationDbContext)
+DA:17,3
+DA:18,3
+DA:20,3
+DA:21,3
+DA:22,3
 FN:45,System.Void GeoAuth.Controllers.AdminController/<ChangeUser>d__6::MoveNext()
 FNDA:0,System.Void GeoAuth.Controllers.AdminController/<ChangeUser>d__6::MoveNext()
 DA:46,0
@@ -2190,16 +2208,16 @@ DA:52,0
 DA:53,0
 DA:54,0
 FN:39,System.Void GeoAuth.Controllers.AdminController/<DeleteUser>d__5::MoveNext()
-FNDA:0,System.Void GeoAuth.Controllers.AdminController/<DeleteUser>d__5::MoveNext()
-DA:40,0
-DA:41,0
-DA:42,0
-DA:43,0
-DA:44,0
+FNDA:1,System.Void GeoAuth.Controllers.AdminController/<DeleteUser>d__5::MoveNext()
+DA:40,1
+DA:41,1
+DA:42,1
+DA:43,1
+DA:44,1
 FN:27,System.Void GeoAuth.Controllers.AdminController/<ManageUserRoles>d__4::MoveNext()
-FNDA:0,System.Void GeoAuth.Controllers.AdminController/<ManageUserRoles>d__4::MoveNext()
-DA:28,0
-DA:29,0
+FNDA:1,System.Void GeoAuth.Controllers.AdminController/<ManageUserRoles>d__4::MoveNext()
+DA:28,1
+DA:29,1
 DA:30,0
 DA:31,0
 DA:32,0
@@ -2219,11 +2237,11 @@ BRDA:36,931,0,0
 BRDA:36,991,1,0
 BRDA:36,991,0,0
 LF:34
-LH:0
+LH:12
 BRF:14
 BRH:0
 FNF:6
-FNH:0
+FNH:3
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Controllers\HomeController.cs
 FN:21,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.HomeController::Index()
@@ -2271,68 +2289,129 @@ FNF:4
 FNH:1
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Controllers\ShapeController.cs
-FN:34,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Index()
+FN:32,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Index()
 FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Index()
+DA:33,1
+DA:34,1
 DA:35,1
-DA:36,1
-DA:37,1
-FN:96,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
-FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
-DA:97,0
-DA:98,0
-DA:99,0
-BRDA:98,14,0,0
-BRDA:98,14,1,0
-BRDA:98,26,0,0
-BRDA:98,26,1,0
-FN:27,System.Void GeoAuth.Controllers.ShapeController::.ctor()
-FNDA:2,System.Void GeoAuth.Controllers.ShapeController::.ctor()
-DA:28,2
-DA:29,2
-DA:32,2
-FN:59,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__3::MoveNext()
-FNDA:1,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__3::MoveNext()
-DA:60,1
-DA:61,1
-DA:62,1
+FN:57,System.Byte[] GeoAuth.Controllers.ShapeController::readLocalShapeFile(System.String)
+FNDA:0,System.Byte[] GeoAuth.Controllers.ShapeController::readLocalShapeFile(System.String)
+DA:58,0
+DA:60,0
+DA:61,0
 DA:63,0
 DA:64,0
 DA:65,0
-DA:66,0
 DA:67,0
-DA:68,0
 DA:69,0
 DA:70,0
 DA:71,0
-DA:72,0
 DA:73,0
 DA:74,0
 DA:75,0
 DA:76,0
-DA:78,0
-DA:79,0
+DA:77,0
+BRDA:69,66,1,0
+BRDA:69,66,0,0
+FN:100,System.Boolean GeoAuth.Controllers.ShapeController::AddVector(System.String,System.String)
+FNDA:0,System.Boolean GeoAuth.Controllers.ShapeController::AddVector(System.String,System.String)
+DA:101,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:124,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:134,0
+DA:136,0
+DA:137,0
+DA:138,0
+BRDA:109,81,0,0
+BRDA:109,81,1,0
+BRDA:115,115,0,0
+BRDA:115,115,1,0
+BRDA:120,142,0,0
+BRDA:120,142,1,0
+FN:173,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult GeoAuth.Controllers.ShapeController::Error()
+DA:174,0
+DA:175,0
+DA:176,0
+BRDA:175,14,0,0
+BRDA:175,14,1,0
+BRDA:175,26,0,0
+BRDA:175,26,1,0
+FN:25,System.Void GeoAuth.Controllers.ShapeController::.ctor()
+FNDA:2,System.Void GeoAuth.Controllers.ShapeController::.ctor()
+DA:26,2
+DA:27,2
+DA:29,2
+FN:140,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__6::MoveNext()
+FNDA:1,System.Void GeoAuth.Controllers.ShapeController/<AddFile>d__6::MoveNext()
+DA:141,1
+DA:144,1
+DA:145,1
+DA:146,0
+DA:147,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:158,0
+DA:165,0
+DA:166,0
+DA:168,0
+DA:169,0
+BRDA:146,74,0,0
+BRDA:146,74,1,0
+BRDA:146,97,0,0
+BRDA:146,97,1,0
+FN:79,System.Void GeoAuth.Controllers.ShapeController/<AddRastor>d__4::MoveNext()
+FNDA:0,System.Void GeoAuth.Controllers.ShapeController/<AddRastor>d__4::MoveNext()
 DA:80,0
+DA:81,0
 DA:82,0
 DA:83,0
 DA:84,0
 DA:85,0
-DA:87,0
-DA:88,0
+DA:86,0
+DA:89,0
 DA:90,0
 DA:91,0
-DA:92,0
 DA:93,0
-BRDA:64,111,0,0
-BRDA:64,111,1,0
-BRDA:69,257,0,0
-BRDA:69,257,1,0
-BRDA:74,325,0,0
-BRDA:74,325,1,0
-BRDA:74,343,0,0
-BRDA:74,343,1,0
-FN:39,System.Void GeoAuth.Controllers.ShapeController/<createdWorkspace>d__2::MoveNext()
+DA:96,0
+DA:98,0
+DA:99,0
+FN:37,System.Void GeoAuth.Controllers.ShapeController/<createdWorkspace>d__2::MoveNext()
 FNDA:0,System.Void GeoAuth.Controllers.ShapeController/<createdWorkspace>d__2::MoveNext()
+DA:38,0
 DA:40,0
+DA:41,0
 DA:42,0
 DA:43,0
 DA:44,0
@@ -2343,16 +2422,13 @@ DA:48,0
 DA:49,0
 DA:50,0
 DA:51,0
-DA:52,0
 DA:53,0
 DA:54,0
-DA:56,0
-DA:57,0
-LF:55
+LF:103
 LH:9
-BRF:12
+BRF:16
 BRH:0
-FNF:5
+FNF:8
 FNH:3
 end_of_record
 SF:c:\Users\dddan\GeoApp\GeoAuth\Areas\Identity\IdentityHostingStartup.cs

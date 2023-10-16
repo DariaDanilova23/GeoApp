@@ -5,16 +5,28 @@
     <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
     <script src="https://unpkg.com/ol-layerswitcher@4.1.1"></script>
     <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.1/dist/ol-layerswitcher.css" />
-
+    <link rel="stylesheet" href="~/css/layer.css">
 }
+ <a class="back" asp-area="" asp-controller="Home" asp-action="Index"><img class="upload" src="~/img/back.png"></a>
 <div class="row">
     <div class="col-md-4">
-        <h3 class="center-h1">Загрузка shape-файла</h3>
+        <h3 class="center-h1">Загрузка слоя</h3>
         <form asp-action="AddFile" asp-controller="Shape" method="post" enctype="multipart/form-data"> <!--Вызов действи AddFile при отправки формы-->
-            <input type="file" name="uploadedFile"><br>
-            <label for="fname">Название карты:</label>
-            <input type="text" id="fname" name="fname"><br>
+            @if ((User.IsInRole("Provider")) ){
+            <label>Тип слоя: <br>
+            <input type="radio" id="" value="raster" name="uploadType"> Растровый слой <br>
+            <input type="radio" value="vector" name="uploadType" checked="true"> Векторный слой 
+            </label>
+            }
+            @if ((User.IsInRole("User")) ){
+                <input type="hidden" value="vector" name="uploadType">
+            }
+            <label>
+            <input type="file"  accept=".zip, .rar, .7zip, image/bmp, image/jpg, image/jpeg, image/png, image/tif, image/tiff, application/pdf, .tif" name="uploadedFile"><br>
+            </label>
+            <label>
             <button type="submit" class="btn btn-primary" value="Загрузить">Загрузить</button>
+            </label>
         </form>
     </div>
 </div>

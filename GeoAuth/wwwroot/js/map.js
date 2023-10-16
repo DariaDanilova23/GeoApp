@@ -34,25 +34,25 @@ closer.onclick = function () {
 };
 
 
-var mapView = new ol.View({
+var mapView = new ol.View({ //определение области карты, которая будет видна при загрузке сайта
   center: [3830000, 5653800],
   zoom: 8.2,
 });
 
-const map = new ol.Map({
+const map = new ol.Map({ //создание карты
   target: 'map',
   view: mapView,
   layers: [
-    new ol.layer.Group({
+    new ol.layer.Group({ //обраделение группы возможных базовых слоев
       title: 'Базовый слой',
-      layers: [new ol.layer.Tile({
+      layers: [new ol.layer.Tile({ // базовый слой OSMStandard
         source: new ol.source.OSM(),
         crossOrigin: "Anonymous",
         type: 'base',
         visible: true,
         title: 'OSMStandard'
       }),
-      new ol.layer.Tile({
+      new ol.layer.Tile({  // базовый слой OSMHumanitarian
         source: new ol.source.OSM({
           url: 'http://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
           crossOrigin: "Anonymous"
@@ -61,7 +61,7 @@ const map = new ol.Map({
         visible: false,
         title: 'OSMHumanitarian'
       }),
-      new ol.layer.Tile({
+      new ol.layer.Tile({ // базовый слой ArcGIS Map
         source: new ol.source.XYZ({
           url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
           crossOrigin: "Anonymous"
@@ -70,7 +70,7 @@ const map = new ol.Map({
         visible: false,
         title: 'ArcGIS Map'
       }),
-      new ol.layer.Tile({
+      new ol.layer.Tile({ // базовый слой googleMap
         source: new ol.source.XYZ({
           url: 'http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}',
           crossOrigin: "Anonymous"
@@ -81,7 +81,7 @@ const map = new ol.Map({
       })
       ]
     })],
-  overlays: [overlay],//
+  overlays: [overlay],// overlay для popUp координаты
   target: 'map'
 });
 //-------------
@@ -161,11 +161,50 @@ var layerSwitcher = new ol.control.LayerSwitcher({
 });
 map.addControl(layerSwitcher);
 //----------------------
+
+//ИЗОБРАЖЕНИЕ 
+const rasterLayerGroup = new ol.layer.Group({ //определение группы растровых слоев
+  'title': 'Растровые слои'
+})
+map.addLayer(rasterLayerGroup); //Добавление группы слоев на карту
+$.ajax({
+  type: "GET",
+  url: "http://localhost:8080/geoserver/rastergeo/wms?request=getCapabilities", // ссылка для запроса растровых слоев
+  dataType: "xml",
+  success: function (xml) {
+    $(xml).find('Layer').each(function () {
+      $(this).find('Layer').each(function () { // цикл для каждого названия слоя
+          $(this).find('Name').each(function () {
+            var parentNode=$(this).parent(); //получение родительского узла
+            if(parentNode[0].nodeName!="Style"){ // проверка не является ли название, названием стиля
+            var raster =new ol.layer.Image({
+              title: $(this).text(),
+              source: new ol.source.ImageWMS({ // получение ресурса слоя 
+                url:'http://localhost:8080/geoserver/rastergeo/wms',
+                params:{
+                  'LAYERS' :$(this).text()
+                }
+              }),
+              serverType:'geoserver'
+            })
+            rasterLayerGroup.getLayers().push(raster); //добавление слоя в группу растров
+            layerSwitcher.renderPanel(); //обновление переключателя слоев
+          }
+          })
+        })
+      });
+  },
+  error: function (error) {
+    console.log("error");
+    console.log(error);
+  }
+});
+
+
 const overlayLayerGroup = new ol.layer.Group({
   'title': 'Тематические слои'
 })
 map.addLayer(overlayLayerGroup); //Добавление группы слоев на карту
-
 $.ajax({
   type: "GET",
   url: "http://localhost:8080/geoserver/geoportal/wfs?request=getCapabilities",
@@ -190,10 +229,11 @@ $.ajax({
     })
   }
 })
+
+
 const personalLayerGroup = new ol.layer.Group({
   'title': 'Личные слои'
 })
-
 //---------------------------
 var userId = document.getElementById("userInfoID").value; //Получение id пользователя
 if (userId != " ") {
@@ -216,19 +256,21 @@ if (userId != " ") {
             title: titleName
           })
           personalLayerGroup.getLayers().push(newlayer); //добавление слоя в группу
+          layerSwitcher.renderPanel(); //Обновление переключателя слоев
           //downLayer.push(newlayer);
+          if (personalLayerGroup.getLayers().getLength() > 0) {
+            map.addLayer(personalLayerGroup);
+          };
         })
       })
-      if (personalLayerGroup.getLayers().getLength() > 0) {
-        map.addLayer(personalLayerGroup);
-      };
-
       deleteLayer();
     }
   })
 }
 
+
 function deleteLayer() {
+  //Создание кнопки на панели инструментов
   layerSwitcher.renderPanel();
   var delButton = document.createElement('button');
   var img = document.createElement('img');
@@ -244,34 +286,33 @@ function deleteLayer() {
   var delControl = new ol.control.Control({
     element: delElement
   });
-
-  var delFlag = false;
   map.addControl(delControl);
-
-  delButton.addEventListener("click", () => {
-    //delButton.classList.toggle("cliked");
+  //------
+  var delFlag = false;
+  delButton.addEventListener("click", () => { //обработчик нажатия кнопки
     delFlag = !delFlag;
     if (confirm("Вы уверены что хотите удалить выбранные слои?")) {
-      var personalLayers = personalLayerGroup.getLayers().array_;
+      var personalLayers = personalLayerGroup.getLayers().array_; //получение слое из группы
       personalLayers.forEach(layer => {
-        if (layer.values_.visible == true) {
-          $.ajax({
+        if (layer.values_.visible == true) { //проверка активен ли слой
+          $.ajax({ // ajax запрос на удаление
             type: "DELETE",
             headers: {
               "Authorization": "Basic " + btoa("admin" + ":" + "geoserver")
             },
             url: 'http://localhost:8080/geoserver/rest/workspaces/' + userId + '/datastores/' + layer.values_.title + '/?recurse=true',
+
+            //url: 'http://localhost:8080/geoserver/rest/layers/'+userId+':'+layer.values_.title +'/?recurse=true',
             success: function (result) {
-              console.log(result);
-              console.log("успех");
-              // personalLayerGroup.getLayers().pop(layer);
-              if (personalLayerGroup.getLayers().getLength() == 0) {
-                map.removeLayer(personalLayerGroup);
+              location.reload();
+              if (personalLayerGroup.getLayers().getLength() == 0) { //если удаляяемый слой последний
+                map.removeLayer(personalLayerGroup); // удаляем всю группу
               };
               layerSwitcher.renderPanel();
             },
             error: function (error) {
-              console.log(error);
+              console.log(layer.values_);
+              console.log(layer);
               console.log("error");
             }
           })
@@ -302,19 +343,18 @@ var lengthControl = new ol.control.Control({
 
 var lengthFlag = false;
 
-lenthButton.addEventListener("click", () => {
-  lenthButton.classList.toggle("cliked");
+lenthButton.addEventListener("click", () => { //обработчик кнопки "Измерение длины"
+  lenthButton.classList.toggle("cliked"); //добавление или удаление класса для подсветки кнопки
   lengthFlag = !lengthFlag;
   document.getElementById("map").style.cursor = "default";
-  if (lengthFlag) {
-    map.removeInteraction(draw);
-    addInteraction('LineString');
-  } else {
+  if (lengthFlag) { //если кнопка активна
+    map.removeInteraction(draw); //удаление старых отрисовок
+    addInteraction('LineString');//добавление отрисовки линии
+  } else { //если кнопка не активна
     map.removeInteraction(draw);
     source.clear();
     const elements = document.getElementsByClassName("ol-tooltip ol-tooltip-static");
-    while (elements.length > 0) elements[0].remove();
-
+    while (elements.length > 0) elements[0].remove(); //удаление таблички с измеренной длиной 
   }
 })
 map.addControl(lengthControl);
@@ -337,18 +377,18 @@ var areaControl = new ol.control.Control({
 });
 
 var areaFlag = false;
-areaButton.addEventListener("click", () => {
-  areaButton.classList.toggle("cliked");
+areaButton.addEventListener("click", () => {//обработчик кнопки "Измерение площади"
+  areaButton.classList.toggle("cliked"); //добавление или удаление класса для подсветки кнопки
   areaFlag = !areaFlag;
   document.getElementById("map").style.cursor = "default";
-  if (areaFlag) {
-    map.removeInteraction(draw);
-    addInteraction('Polygon');
-  } else {
-    map.removeInteraction(draw);
+  if (areaFlag) { //если кнопка активна
+    map.removeInteraction(draw); //удаление старых отрисовок
+    addInteraction('Polygon'); //добавление отрисовки полигона
+  } else { //если кнопка не активна
+    map.removeInteraction(draw); //удаление старых отрисовок
     source.clear();
     const elements = document.getElementsByClassName("ol-tooltip ol-tooltip-static");
-    while (elements.length > 0) elements[0].remove();
+    while (elements.length > 0) elements[0].remove(); //удаление таблички с измеренной площадью 
 
   }
 })
@@ -432,7 +472,7 @@ exportButton.addEventListener("click", () => {
 map.addControl(exportControl); //Добавление кнопки экспорта на карту
 
 var source = new ol.source.Vector();
-const vector = new ol.layer.Vector({
+const vector = new ol.layer.Vector({ //слой с выделенными полигонами слоя запроса
   source: source,
   style: {
     'fill-color': 'rgba(255, 255, 255, 0.2)',
@@ -467,35 +507,6 @@ var selectLayer = document.createElement("select");
 selectLayer.setAttribute('name', 'selectLayer');
 selectLayer.setAttribute('id', 'selectLayer');
 attQueryDiv.appendChild(selectLayer);
-/*
-//--------------------------
-var selectAttributeLable = document.createElement("lable");
-selectAttributeLable.innerHTML = "Выбрать атрибут";
-attQueryDiv.appendChild(selectAttributeLable);
-
-var selectAttribute = document.createElement("select");
-selectAttribute.setAttribute('name', 'selectAttribute');
-selectAttribute.setAttribute('id', 'selectAttribute');
-attQueryDiv.appendChild(selectAttribute);
-//---------------------------------
-var selectOperatorLable = document.createElement("lable");
-selectOperatorLable.innerHTML = "Оператор";
-attQueryDiv.appendChild(selectOperatorLable);
-
-var selectOperator = document.createElement("select");
-selectOperator.setAttribute('name', 'selectOperator');
-selectOperator.setAttribute('id', 'selectOperator');
-attQueryDiv.appendChild(selectOperator);
-//--------------------------------------
-var enterLable = document.createElement("lable");
-enterLable.innerHTML = "Значение";
-attQueryDiv.appendChild(enterLable);
-
-var enterValue = document.createElement("input");
-enterValue.setAttribute('type', 'text');
-enterValue.setAttribute('name', 'enterValue');
-enterValue.setAttribute('id', 'enterValue');
-attQueryDiv.appendChild(enterValue);*/
 
 var attQryRun = document.createElement("button");
 attQryRun.setAttribute('type', 'button');
@@ -505,6 +516,10 @@ attQryRun.setAttribute('onclick', 'attributeQuery()');
 attQryRun.innerHTML = "Найти";
 attQueryDiv.appendChild(attQryRun);
 
+tabDiv = document.createElement("div");
+tabDiv.className = "attListDiv";
+tabDiv.id = "attListDiv";
+document.body.appendChild(tabDiv);
 //-----------------
 var selectorButton = document.createElement('button');
 var img = document.createElement('img');
@@ -525,34 +540,36 @@ var selectorControl = new ol.control.Control({
 //внимание
 var geojson;
 var featureOverlay;
-
+var bolIdentify = false;
 var selectorFlag = false;
-
-selectorButton.addEventListener("click", () => {
-  selectorButton.classList.toggle("cliked");
+var bolClick = false;
+selectorButton.addEventListener("click", () => { //обработчик нажатия кнопки просмотра атрибутов
+  selectorButton.classList.toggle("cliked"); //добавление или удаление 
   selectorFlag = !selectorFlag;
-  if (selectorFlag) {
+  if (selectorFlag) { //если кнопка активна
     if (geojson) {
       geojson.getSource().clear();
-      map.removeLayer(geojson);
+      map.removeLayer(geojson);//удаление слоя со старыми данными
     }
     if (featureOverlay) {
       featureOverlay.getSource().clear();
-      map.removeLayer(featureOverlay);
+      map.removeLayer(featureOverlay);//удаление слоя со старыми данными
     }
-    attQueryDiv.style.display = 'block';
-    bolIdentify = false;
-    addMapLayerList();
+    attQueryDiv.style.display = 'block'; //отображение таблицв атрибутов
+    if (bolClick == false) { //если кнопка нажата в первый раз 
+      addMapLayerList(); //вызов ф-ии получения списка слоев 
+      bolClick = true;
+    };
   }
   else {
-    attQueryDiv.style.display = 'none';
-    document.getElementById("attListDiv").style.display = 'none';
+    attQueryDiv.style.display = 'none'; //скрытие div для таблицы атрибутов
+    tabDiv.style.display = 'none'; //скрытие таблицы атрибутов
 
-    if (geojson) {
+    if (geojson) { //удаление слоя со старыми данными
       geojson.getSource().clear();
       map.removeLayer(geojson);
     }
-    if (featureOverlay) {
+    if (featureOverlay) { //удаление слоя со старыми данными
       featureOverlay.getSource().clear();
       map.removeLayer(featureOverlay);
     }
@@ -560,160 +577,58 @@ selectorButton.addEventListener("click", () => {
 })
 map.addControl(selectorControl);
 
-function addMapLayerList() {
+function addMapLayerList() { //получение списка слоев
   $(document).ready(function () {
-    $.ajax({
+    $.ajax({ //ajax запрос geoserver для получения слоев с workspace geoportal
       type: "GET",
       url: "http://localhost:8080/geoserver/geoportal/wfs?request=getCapabilities",
       dataType: "xml",
       success: function (xml) {
         var select = $('#selectLayer');
-        select.append("<option class='ddindent' value=''></option>");
+        select.append("<option class='ddindent' value=''></option>"); // добавление пустого варианта в выпадающий список
         $(xml).find('FeatureType').each(function () {
           var elementRespond = $(this);
           $(this).find('Name').each(function () {
-            var title = elementRespond.find('Title').text();
-            var value = $(this).text();
+            var title = elementRespond.find('Title').text(); //получение названия слоя
+            var value = $(this).text();//получение значения слоя
             //console.log(value);
-            select.append("<option class='ddindent' value='" + value + "'>" + title + "</option>");
+            select.append("<option class='ddindent' value='" + value + "'>" + title + "</option>"); // добавление пустого варианта в выпадающий список
           })
         })
       }
     });
-    /*
-    $.ajax({
-      type: "GET",
-      url: "http://localhost:8080/geoserver/" + userId + "/wfs?request=getCapabilities",
-      dataType: "xml",
-      success: function (xml) {
-        var select = $('#selectLayer');
-        $(xml).find('FeatureType').each(function () {
-          var elementRespond = $(this);
-          $(this).find('Name').each(function () {
-            var title = elementRespond.find('Title').text();
-            var value = $(this).text();
-            //console.log(value);
-            select.append("<option class='ddindent' value='" + value + "'>Личный: " + title + "</option>");
-          })
-        })
-      }
-    });*/
   });
 }
 // Фильрация после выбора слоя
+
 $(function () {
-  document.getElementById("selectLayer").onchange = function () {
-    var select = document.getElementById("selectAttribute");
-    while (select.options.length > 0) {
-      select.remove(0);
-    }
-    var value_layer = $(this).val();
-    $(document).ready(function () {
-      $.ajax({
-        type: "GET",
-        url: "http://localhost:8080/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=1.1.0&typeName=" + value_layer,
-        dataType: "xml",
-        success: function (xml) {
-          var select = $('#selectAttribute');
-          var tile = $(xml).find('xsd\\:complexType').attr('name');
-          select.append("<option class='ddindent' value=''></option>");
-          $(xml).find('xsd\\:sequence').each(function () {
-
-            $(this).find('xsd\\:element').each(function () {
-              console.log($(this));
-              var value = $(this).attr('name');
-              var type = $(this).attr('type');
-
-              //  console.log($(this));
-
-              if (value != 'geom' && value != 'the_geom') {
-                select.append("<option class='ddindent' value='" + type + "'>" + value + "</option>");
-              }
-              //---------убрать-------
-              //   select.append("<option class='ddindent' value='xsd:double'> id </option>");
-            });
-
-          });
-        }
-      });
-    })
-  };
-  /*
-    document.getElementById("selectAttribute").onchange = function () {
-      var operator = document.getElementById("selectOperator");
-      while (operator.options.length > 0) {
-        operator.remove(0);
-      }
-  
-      var value_type = $(this).val();
-      var value_attribute = $('#selectAttribute option:selected').text();
-      operator.options[0] = new Option('Select operator', "");
-  
-      if (value_type == 'xsd:short' || value_type == 'xsd:int' || value_type == 'xsd:double') {
-        var operator1 = document.getElementById("selectOperator");
-        operator1.options[1] = new Option('Больше', '>');
-        operator1.options[2] = new Option('Меньше', '<');
-        operator1.options[3] = new Option('Равен', '=');
-      }
-      else if (value_type == 'xsd:string') {
-        var operator1 = document.getElementById("selectOperator");
-        operator1.options[1] = new Option('Как', 'Like');
-        operator1.options[2] = new Option('Равен', '=');
-      }
-    }
-  */
-
-
-  document.getElementById('attQryRun').onclick = function () {
-    //map.set("isLoading", 'YES');
-
+  document.getElementById('attQryRun').onclick = function () { //обработчик кнопики "Найти" при выводе атрибутов
     if (featureOverlay) {
       featureOverlay.getSource().clear();
       map.removeLayer(featureOverlay);
     }
 
-    var layer = document.getElementById("selectLayer");
-    /*var attribute = document.getElementById("selectAttribute");
-    var operator = document.getElementById("selectOperator");
-    var txt = document.getElementById("enterValue");*/
-
-    if (layer.options.selectedIndex == 0) {
-      alert("Выберите слой");
+    var layer = document.getElementById("selectLayer"); //получение выбранного слоя
+    if (layer.options.selectedIndex == 0) { //если слой не выбран
+      alert("Выберите слой"); //просьба выбрать слой
     }
-    /*else if (attribute.options.selectedIndex == -1) {
-      alert("Выберите атрибут");
-    } else if (operator.options.selectedIndex <= 0) {
-      alert("Выберите оператор");
-    } else if (txt.value.length <= 0) {
-      alert("Введите значение");
-    } */
-    else {
-      var value_layer = layer.options[layer.selectedIndex].value;
-      /* var value_attribute=attribute.options[attribute.selectedIndex].text;
-       var value_operator=operator.options[operator.selectedIndex].value;
-       var value_txt=txt.value;
-       if(value_operator == 'Like'){
-         value_txt="%25"+value_txt+"%25";
-       }
-       else{
-         value_txt=value_txt;
-       }*/
-      var url = "http://localhost:8080/geoserver/geoportal/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=" + value_layer + "&outputFormat=application/json";
-      newaddGeoJsonToMap(url);
-      newpopulateQueryTable(url);
-      setTimeout(function () { newaddRowHandlers(url); }, 3000);
-    // map.set('isLoading', 'NO');
+    else { // если слой выбран
+      var value_layer = layer.options[layer.selectedIndex].value; //получаем зачение выбранного слоя
+      var url = "http://localhost:8080/geoserver/geoportal/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=" + value_layer + "&outputFormat=application/json"; //url слоя на geoserver
+      newaddGeoJsonToMap(url); //ф-ия подсвечивающая на карте полигоны выбранного слоя
+      newpopulateQueryTable(url); //ф-ия создания таблицы атрибутов
+      setTimeout(function () { newaddRowHandlers(url); }, 3000); // ф-ия обработчик выбора атрибута слоя
     }
   }
 });
 
-function newaddGeoJsonToMap(url) {
-  if (geojson) {
+function newaddGeoJsonToMap(url) {//ф-ия подсвечивающая на карте полигоны выбранного слоя
+  if (geojson) { //если слой существует
     geojson.getSource().clear();
-    map.removeLayer(geojson);
+    map.removeLayer(geojson); //удаление старого слоя
   }
 
-  var style = new ol.style.Style({
+  var style = new ol.style.Style({ //стилизация отображения слоя на карте
     stroke: new ol.style.Stroke({
       color: '#FFFF00',
       width: 3
@@ -725,14 +640,14 @@ function newaddGeoJsonToMap(url) {
       })
     })
   });
-  geojson = new ol.layer.Vector({
+  geojson = new ol.layer.Vector({ //определение слоя с подсветкой
     source: new ol.source.Vector({
       url: url,
       format: new ol.format.GeoJSON()
     }),
     style: style,
   });
-  geojson.getSource().on('addfeature', function () {
+  geojson.getSource().on('addfeature', function () { //обработчик добавления объектов
     map.getView().fit(
       geojson.getSource().getExtent(),
       { duration: 1590, size: map.getSize(), maxZoom: 21 }
@@ -741,7 +656,7 @@ function newaddGeoJsonToMap(url) {
   map.addLayer(geojson);
 };
 
-function newpopulateQueryTable(url) {
+function newpopulateQueryTable(url) { //ф-ия создаания таблицы атрибутов
   if (typeof attributePanel !== 'undefined') {
     if (attributePanel.parentElement !== null) {
       attributePanel.close();
@@ -749,78 +664,75 @@ function newpopulateQueryTable(url) {
   }
 
   $.getJSON(url, function (data) {
-    var col = [];
-    col.push('id');
+    var col = []; //определение списка с названиями колонок слоя
+    col.push('id'); //добавление колонки с названием id
     for (var i = 0; i < data.features.length; i++) {
       for (var key in data.features[i].properties) {
         if (col.indexOf(key) === -1) {
-          col.push(key);
+          col.push(key); // добавление название колонки слоя в список
         }
       }
     }
 
-    var table = document.createElement("table");
+    var table = document.createElement("table");//создание таблицы
     table.setAttribute("class", "table table-bordered table-hover table-condensed");
     table.setAttribute("id", "attQryTable");
 
-    var tr = table.insertRow(-1);
+    var tr = table.insertRow(-1); //добавление поля в таблицу
 
-    for (var i = 0; i < col.length; i++) {
-      var th = document.createElement("th");
+    for (var i = 0; i < col.length; i++) { //для каждого элемента в списке с названиями колонок слоя
+      var th = document.createElement("th");//создание шапки таблицы
       th.innerHTML = col[i];
-      tr.appendChild(th);
+      tr.appendChild(th);// добавление шапки в таблицу
     }
 
     for (var i = 0; i < data.features.length; i++) {
       tr = table.insertRow(-1);
       for (var j = 0; j < col.length; j++) {
         var tabCell = tr.insertCell(-1);
-        if (j == 0) { tabCell.innerHTML = data.features[i]['id']; }
+        if (j == 0) { tabCell.innerHTML = data.features[i]['id']; } //добавление атрибута id
         else {
-          tabCell.innerHTML = data.features[i].properties[col[j]];
+          tabCell.innerHTML = data.features[i].properties[col[j]]; // добавление атрибутов в таблицу
         }
       }
     }
-    var tabDiv = document.getElementById("attListDiv");
-
     var delTab = document.getElementById("attQryTable");
     if (delTab) {
-      tabDiv.removeChild(delTab);
+      tabDiv.removeChild(delTab);  //удаление таблицы
     }
 
-    tabDiv.appendChild(table);
-    document.getElementById("attListDiv").style.display = "block";
-    document.getElementById("attListDiv").scrollIntoView();
+    tabDiv.appendChild(table); //добавление таблицы
+    tabDiv.style.display = "block"; //отображение таблицы
+    tabDiv.scrollIntoView(); //фокус экрана на таблице
   });
 
-  var highlightStyle = new ol.style.Style({
+};
+
+function newaddRowHandlers() { // ф-ия обработчик выбора атрибута слоя
+  var highlightStyle = new ol.style.Style({ //определение стиля выделенного полигона
     fill: new ol.style.Fill({
-      color: 'rgba(255,0,255,0,0.3)'
+      color: 'rgba(184, 184, 184, 0.4)'
     }),
     stroke: new ol.style.Stroke({
-      color: '#FF00FF',
+      color: '#FF553E',
       width: 3,
     }),
     image: new ol.style.Circle({
       radius: 10,
       fill: new ol.style.Fill({
-        color: "#FF00FF"
+        color: '#FF553E'
       })
     })
   });
 
-  //var
-  featureOverlay = new ol.layer.Vector({
+  featureOverlay = new ol.layer.Vector({ //слой с выделенным полигоном
     source: new ol.source.Vector(),
     map: map,
     style: highlightStyle
   })
-};
-
-function newaddRowHandlers() {
-  var table = document.getElementById('attQryTable');
-  var rows = document.getElementById('attQryTable').rows;
-  var heads = document.getElementsByTagName('th');
+  var table = document.getElementById('attQryTable'); //получение таблицы
+  var rows = table.rows;
+  var heads = document.getElementsByTagName('th'); //получение шапки таблицы
   var col_no;
   for (var i = 0; i < heads.length; i++) {
     var head = heads[i];
@@ -836,30 +748,31 @@ function newaddRowHandlers() {
 
         $(function () {
           $("attQryTable td").each(function () {
-            $(this).parent("tr").css("background-color", "white");
+            $(this).parent("tr").css("background-color", "white"); //определение цвета ячеек
           });
         });
 
         var cell = this.cells[col_no - 1];
         var id = cell.innerHTML;
+        /*
         $(document).ready(function () {
           $("attQryTable td:nth-child(" + col_no + ")").each(function () {
-            if ($(this).text() == id) {
-              $(this).parent("tr").css("background-color", "#d1d8e2");
+            if ($(this).text() == id) { 
+              $(this).parent("tr").css("background-color", "#d1d8e2"); //определение цвета ячеек 
             }
           })
-        });
+        });*/
+
 
         var features = geojson.getSource().getFeatures();
 
         for (i = 0; i < features.length; i++) {
           if (features[i].getId() == id) {
             featureOverlay.getSource().addFeature(features[i]);
-
-            featureOverlay.getSource().on('addfeature', function () {
+            featureOverlay.getSource().on('addfeature', function () { //обработчик добавления объекта к слою выделения полигона
               map.getView().fit(
                 featureOverlay.getSource().getExtent(),
-                { duration: 1500, size: map.getSize(), maxZoom: 24 }
+                { duration: 1500, size: map.getSize(), maxZoom: 24 } //приближение к слою
               );
             });
           }
@@ -872,56 +785,26 @@ function newaddRowHandlers() {
 
 //------------------------
 /**
- * Currently drawn feature.
+ * Текущий нарисованный объект.
  * @type {ol.Feature}
  */
 var sketch;
 
-
 /**
- * The help tooltip element.
- * @type {Element}
- */
-var helpTooltipElement;
-
-
-/**
- * Overlay to show the help messages.
- * @type {ol.Overlay}
- */
-var helpTooltip;
-
-
-/**
- * The measure tooltip element.
+ * Элемент всплывающей подсказки измерения.
  * @type {Element}
  */
 var measureTooltipElement;
 
 
 /**
- * Overlay to show the measurement.
+ * Overlay для изобрадения измерений.
  * @type {ol.Overlay}
  */
 var measureTooltip;
 
-
 /**
- * Message to show when the user is drawing a polygon.
- * @type {string}
- */
-var continuePolygonMsg = 'Нажмите, чтобы продолжить рисовать полигон';
-
-
-/**
- * Message to show when the user is drawing a line.
- * @type {string}
- */
-var continueLineMsg = 'Нажмите, чтобы продолжить рисовать линию';
-
-
-/**
- * Handle pointer move.
+ * Обработчик джижения мышки.
  * @param {ol.MapBrowserEvent} evt
  */
 var pointerMoveHandler = function (evt) {
@@ -934,17 +817,13 @@ var pointerMoveHandler = function (evt) {
 
 map.on('pointermove', pointerMoveHandler);
 
-$(map.getViewport()).on('mouseout', function () {
-  $(helpTooltipElement).addClass('hidden');
-});
 
-
-var draw; // global so we can remove it later
-function addInteraction(intType) {
+var draw;
+function addInteraction(intType) { //Функция отрисовки элементов на карте
   draw = new ol.interaction.Draw({
     source: source,
     type: intType,
-    style: new ol.style.Style({
+    style: new ol.style.Style({ //определение стиля отрисовки
       fill: new ol.style.Fill({
         color: 'rgba(255, 255, 255, 0.2)'
       }),
@@ -956,7 +835,7 @@ function addInteraction(intType) {
       image: new ol.style.Circle({
         radius: 5,
         stroke: new ol.style.Stroke({
-          color: 'rgba(0, 0, 0, 0.7)'
+          color: 'rgba(0, 0, 0, 0.5)'
         }),
         fill: new ol.style.Fill({
           color: 'rgba(255, 255, 255, 0.2)'
@@ -964,35 +843,34 @@ function addInteraction(intType) {
       })
     })
   });
-  map.addInteraction(draw);
+  map.addInteraction(draw); //добавление отрисовки на карту
 
   createMeasureTooltip();
 
-  var listener;
 
-  draw.on('drawstart', function (evt) {
+  draw.on('drawstart', function (evt) { //ф-ия начала отрисовки
     // set sketch
     sketch = evt.feature;
 
     /** @type {import("../src/ol/coordinate.js").Coordinate|undefined} */
-    let tooltipCoord = evt.coordinate;
+    let tooltipCoord = evt.coordinate; //определение координаты
 
     listener = sketch.getGeometry().on('change', function (evt) {
       const geom = evt.target;
       let output;
-      if (geom instanceof ol.geom.Polygon) {
-        output = formatArea(geom);
+      if (geom instanceof ol.geom.Polygon) { //если  отрисовываем полигон
+        output = formatArea(geom); // вызов ф-ии которая форматирует определенную площадь 
         tooltipCoord = geom.getInteriorPoint().getCoordinates();
-      } else if (geom instanceof ol.geom.LineString) {
-        output = formatLength(geom);
+      } else if (geom instanceof ol.geom.LineString) { //если отрисовываем линию
+        output = formatLength(geom); // вызов ф-ии которая форматирует определенную длину 
         tooltipCoord = geom.getLastCoordinate();
       }
-      measureTooltipElement.innerHTML = output;
-      measureTooltip.setPosition(tooltipCoord);
+      measureTooltipElement.innerHTML = output; // отображение выделенной длины
+      measureTooltip.setPosition(tooltipCoord); // на позиции координат
     });
   });
 
-  draw.on('drawend', function () {
+  draw.on('drawend', function () { //ф-ия завершения отрисовки
     measureTooltipElement.className = 'ol-tooltip ol-tooltip-static';
     measureTooltip.setOffset([0, -7]); //смещение
     sketch = null;
@@ -1000,12 +878,10 @@ function addInteraction(intType) {
     createMeasureTooltip();
   });
 }
-/**
- * Creates a new measure tooltip
- */
-function createMeasureTooltip() {
-  if (measureTooltipElement) {
-    measureTooltipElement.parentNode.removeChild(measureTooltipElement);
+
+function createMeasureTooltip() { //Создает новую подсказку измерений
+  if (measureTooltipElement) {//если уже существует подсказка
+    measureTooltipElement.parentNode.removeChild(measureTooltipElement); //убрать ее
   }
   measureTooltipElement = document.createElement('div');
   measureTooltipElement.className = 'ol-tooltip ol-tooltip-measure';
@@ -1016,16 +892,16 @@ function createMeasureTooltip() {
     stopEvent: false,
     insertFirst: false,
   });
-  map.addOverlay(measureTooltip);
+  map.addOverlay(measureTooltip); //добавление подсказки на карту
 }
 
 /**
- * Let user change the geometry type.
- * @param {Event} e Change event.
+ * Позвольяет пользователю изменить тип геометрии.
+ * @param {Event} e 
  */
 
 /**
- * format length output
+ * форматирование отображения длины
  * @param {ol.geom.LineString} line
  * @return {string}
  */
@@ -1033,17 +909,17 @@ var formatLength = function (line) {
   var length;
   length = Math.round(line.getLength() * 100) / 100;
   var output;
-  if (length > 100) {
+  if (length > 100) { //если длина больше 100
     output = (Math.round(length / 1000 * 100) / 100) +
-      ' ' + 'km';
-  } else {
+      ' ' + 'km'; //отображаем в км
+  } else { //если длина меньше 100
     output = (Math.round(length * 100) / 100) +
-      ' ' + 'm';
+      ' ' + 'm'; //отображаем в м
   }
   return output;
 };
 /**
- * format length output
+ * форматирование отображения площади
  * @param {ol.geom.Polygon} polygon
  * @return {string}
  */
@@ -1051,12 +927,12 @@ var formatArea = function (polygon) {
   var area;
   area = polygon.getArea();
   var output;
-  if (area > 10000) {
+  if (area > 10000) { //если площадь больше 10000
     output = (Math.round(area / 1000000 * 100) / 100) +
-      ' ' + 'km<sup>2</sup>';
+      ' ' + 'km<sup>2</sup>';// отображение площади в км2
   } else {
     output = (Math.round(area * 100) / 100) +
-      ' ' + 'm<sup>2</sup>';
+      ' ' + 'm<sup>2</sup>';// отображение площади в м2
   }
   return output;
 };

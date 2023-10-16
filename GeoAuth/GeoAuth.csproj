@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DbfDataReader" Version="0.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
@@ -23,6 +24,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0-preview.5.21321.1" />
+    <PackageReference Include="NetTopologySuite" Version="2.3.0" />
+    <PackageReference Include="NetTopologySuite.Features" Version="2.1.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
   </ItemGroup>
 

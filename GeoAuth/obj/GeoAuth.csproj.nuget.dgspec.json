@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj": {}
+    "c:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj": {
+    "c:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
+        "projectUniqueName": "c:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
         "projectName": "GeoAuth",
-        "projectPath": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
+        "projectPath": "c:\\Users\\dddan\\GeoApp\\GeoAuth\\GeoAuth.csproj",
         "packagesPath": "C:\\Users\\dddan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dddan\\GeoApp\\GeoAuth\\obj\\",
+        "outputPath": "c:\\Users\\dddan\\GeoApp\\GeoAuth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dddan\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DbfDataReader": {
+              "target": "Package",
+              "version": "[0.8.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -71,6 +75,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.0-preview.5.21321.1, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "NetTopologySuite.Features": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

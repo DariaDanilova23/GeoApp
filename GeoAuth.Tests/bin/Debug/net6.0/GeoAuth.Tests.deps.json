@@ -80,6 +80,19 @@
       },
       "coverlet.collector/3.1.2": {},
       "coverlet.msbuild/6.0.0": {},
+      "DbfDataReader/0.8.0": {
+        "dependencies": {
+          "System.Data.Common": "4.3.0",
+          "System.Memory": "4.5.4",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/DbfDataReader.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.8.0.0"
+          }
+        }
+      },
       "Fare/2.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
@@ -1287,6 +1300,28 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
+      "NetTopologySuite/2.3.0": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NetTopologySuite.Features/2.1.0": {
+        "dependencies": {
+          "NetTopologySuite": "2.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -1670,6 +1705,18 @@
           "System.IO": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0"
+        }
+      },
+      "System.Data.Common/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2369,6 +2416,7 @@
       "xunit.runner.visualstudio/2.4.3": {},
       "GeoAuth/1.0.0": {
         "dependencies": {
+          "DbfDataReader": "0.8.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.UI": "6.0.10",
@@ -2376,6 +2424,8 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.0-preview.5.21321.1",
+          "NetTopologySuite": "2.3.0",
+          "NetTopologySuite.Features": "2.1.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3"
         },
         "runtime": {
@@ -2431,6 +2481,13 @@
       "sha512": "sha512-cUKI50VSVBqDQDFIdBnjN0Jk5JYhjtD0geP2BZZv71/ZrKORJXcLRswFsojI+cHdV+rFUL2XDJEpuhK3x1YqLA==",
       "path": "coverlet.msbuild/6.0.0",
       "hashPath": "coverlet.msbuild.6.0.0.nupkg.sha512"
+    },
+    "DbfDataReader/0.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E/1lN/a7VMjk0tXjZYO0xmUmvzhkTnT4oogbhMDy7gFhZc30yqYnxGZcYrpmfpoAxac81pY02xN1dbobKV0GRA==",
+      "path": "dbfdatareader/0.8.0",
+      "hashPath": "dbfdatareader.0.8.0.nupkg.sha512"
     },
     "Fare/2.1.1": {
       "type": "package",
@@ -2936,6 +2993,20 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
+    "NetTopologySuite/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y+YOvA5um+75Wm9NKE+EhUNCvLYWiPhPW5Q5eBNi6kVNbxsX60/nvIJtve5iRcbrAl38W9h2w2yBjU81cjDO5g==",
+      "path": "nettopologysuite/2.3.0",
+      "hashPath": "nettopologysuite.2.3.0.nupkg.sha512"
+    },
+    "NetTopologySuite.Features/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Iq+Ie9WZJj8Pyu3asHZ/UwZLim786QzWC0DmLEzFK2u3BeLHDK7iWfsYBLDb/RCBUql8VBmW6LMlsJ+LKUHduA==",
+      "path": "nettopologysuite.features/2.1.0",
+      "hashPath": "nettopologysuite.features.2.1.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
       "serviceable": true,
@@ -3208,6 +3279,13 @@
       "sha512": "sha512-DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
+    },
+    "System.Data.Common/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
+      "path": "system.data.common/4.3.0",
+      "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",

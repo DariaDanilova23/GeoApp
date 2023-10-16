@@ -374,3 +374,6 @@ C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\refint\GeoAuth.dll
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.pdb
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\GeoAuth.genruntimeconfig.cache
 C:\Users\dddan\GeoApp\GeoAuth\obj\Debug\net6.0\ref\GeoAuth.dll
+C:\Users\dddan\GeoApp\GeoAuth\bin\Debug\net6.0\DbfDataReader.dll
+C:\Users\dddan\GeoApp\GeoAuth\bin\Debug\net6.0\NetTopologySuite.dll
+C:\Users\dddan\GeoApp\GeoAuth\bin\Debug\net6.0\NetTopologySuite.Features.dll

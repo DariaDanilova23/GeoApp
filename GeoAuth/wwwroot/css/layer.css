@@ -1,0 +1,19 @@
+.col-md-4{
+    box-shadow: 0px 0px 12px 7px lightgrey;
+    padding: 15px;
+    border-radius: 15px;
+}
+.center-h1 {
+    margin-bottom: 30px;
+}
+form{
+    text-align: center;
+}
+label{
+    display: block;
+    margin-bottom: 15px;
+}
+.back{
+    position: absolute;
+    left: 5px;
+}

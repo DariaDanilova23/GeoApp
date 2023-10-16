@@ -30,7 +30,7 @@ public class ServiceTests
         //_userManager=userManager;
       }
   */
-
+    //Проверка HomeController 
     [Fact]
     public void HomeTest()
     {
@@ -47,6 +47,7 @@ public class ServiceTests
         Assert.NotNull(objHome);
     }
 
+    //Проверка ShapeController 
     [Fact]
     public void ShapeTest()
     {
@@ -55,19 +56,22 @@ public class ServiceTests
         Assert.Equal("Index", res?.ViewName);
     }
 
+    //Проверка метода AddFile в ShapeController 
     [Fact]
     public void AddShapeFile()
     {
         ShapeController obj = new ShapeController();
 
-        var filePath = "C:/Users/dddan/GeoApp/GeoAuth.Tests/Services/91_3.shp";
+        var filePath = "C:/Users/dddan/GeoApp/GeoAuth.Tests/Services/layers3024.zip";
         using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
         var formFile = new Microsoft.AspNetCore.Http.FormFile(stream, 0, stream.Length, null, "test");
-        var t = obj.AddFile(formFile);
+        var t = obj.AddFile(formFile,"vector");
         //Assert.NotEmpty(t);
     }
 
     protected readonly ApplicationDbContext _context;
+
+    // Проверка AdminController
     [Fact]
    public void AdminTest()
     {
@@ -86,7 +90,7 @@ public class ServiceTests
         AdminController obj = new AdminController(mgr, context.Object);
     }
 
-    
+    // Проверка метода ManageUserRoles в AdminController
     [Fact]
     public void ManageUserTest()
     {
@@ -106,6 +110,7 @@ public class ServiceTests
     }
 
 
+    // Проверка метода DeleteUser в AdminController
     [Fact]
      public void DelteUserTest()
     {
